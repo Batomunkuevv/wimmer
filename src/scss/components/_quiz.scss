@@ -1,0 +1,298 @@
+.quiz {
+    margin: auto;
+    max-width: 742px;
+    width: calc(100% - 32px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 767px) {
+        min-height: 643px;
+    }
+
+    @media (max-width: 576px) {
+        width: calc(100% - 24px);
+    }
+
+    &__progressbar {
+        background: #e2e2e2;
+        height: 4px;
+        position: relative;
+
+        &-progress {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: $colorAction;
+            transition: all 0.3s ease-in-out 0s;
+        }
+    }
+
+    &__body {
+        padding: 44px 32px 32px;
+        background: #fff;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 992px) {
+            padding: 32px 16px;
+        }
+
+        &--in-hero {
+            padding-top: 24px;
+            padding-bottom: 0;
+        }
+    }
+
+    &__title {
+        margin-bottom: 32px;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: unset;
+        font-family: $fontFamilyAccent;
+        font-size: 24px;
+        line-height: toProcent(24, 28);
+        text-align: center;
+        text-transform: uppercase;
+        max-width: 538px;
+
+        @media (max-width: 992px) {
+            font-size: 20px;
+        }
+
+        &--in-hero {
+            margin-bottom: 16px;
+        }
+
+        &--last {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__variants {
+        margin-left: -32px;
+        margin-right: -32px;
+        border-top: 1px solid #bcbcbc;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        @media (max-width: 992px) {
+            margin-left: -16px;
+            margin-right: -16px;
+        }
+
+        @media (max-width: 576px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &--types-of-building {
+            @media (max-width: 576px) {
+                display: block;
+            }
+        }
+    }
+
+    &__variant {
+        padding: 0 16px 12px;
+        border-bottom: 1px solid #bcbcbc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out 0s;
+
+        &--type-of-building {
+            padding: 20px 16px;
+        }
+
+        &.is-active {
+            color: $colorAction;
+            pointer-events: none;
+        }
+
+        &:hover {
+            color: $colorAction;
+        }
+
+        &:not(.quiz__variant--type-of-building):not(:nth-child(2n)) {
+            @media (max-width: 576px) {
+                border-right: 1px solid #bcbcbc;
+            }
+        }
+
+        &:not(:nth-child(3n)) {
+            @media (min-width: 576px) {
+                border-right: 1px solid #bcbcbc;
+            }
+        }
+
+        &-icon {
+            margin-bottom: 4px;
+            width: 128px;
+            aspect-ratio: 1/1;
+
+            @media (max-width: 576px) {
+                width: 100px;
+            }
+
+            &--type-of-building {
+                width: 56px;
+            }
+        }
+
+        &-name {
+            @media (max-width: 576px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__buttons {
+        margin-top: auto;
+        display: flex;
+        justify-content: end;
+        gap: 24px;
+        flex-wrap: wrap;
+
+        @media (max-width: 767px) {
+            margin-top: 48px;
+        }
+
+        @media (max-width: 576px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        @media (max-width: 370px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__button {
+        min-width: 144px;
+    }
+
+    &__advantages {
+        padding: 18px 23px;
+        background: #e2e2e2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        column-gap: 24px;
+        row-gap: 16px;
+
+        @media (max-width: 767px) {
+            padding: 16px;
+            justify-content: center;
+        }
+
+        &-item {
+            display: flex;
+            align-items: start;
+            gap: 8px;
+            font-size: 14px;
+            line-height: toProcent(14, 20);
+
+            &::before {
+                content: "";
+                margin-top: -2px;
+                width: 24px;
+                aspect-ratio: 1/1;
+                background: url("../images/icons/check-in-circle.svg") 0 0 / 100% no-repeat;
+            }
+        }
+    }
+
+    &__address {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 16px;
+        row-gap: 24px;
+
+        @media (min-width: 767px) {
+            margin-bottom: 32px;
+        }
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+
+        &-item {
+            &--big {
+                @media (min-width: 767px) {
+                    width: 74.1%;
+                }
+            }
+
+            &--small {
+                @media (min-width: 767px) {
+                    width: 23.5%;
+                }
+            }
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__item {
+        width: 100%;
+    }
+
+    &__label {
+        margin-bottom: 12px;
+        font-family: $fontFamilyAccent;
+        font-size: 14px;
+        line-height: toProcent(14, 16);
+        text-transform: uppercase;
+        display: block;
+    }
+
+    &__last {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-text {
+            margin-bottom: 16px;
+            text-align: center;
+
+            & a {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &-icon {
+            margin-bottom: 16px;
+            width: 96px;
+            aspect-ratio: 1/1;
+        }
+
+        &-email {
+            margin-bottom: 32px;
+        }
+
+        &-privacy {
+            margin-bottom: 48px;
+            width: 100%;
+            align-items: start;
+        }
+
+        &-button {
+            width: 100%;
+        }
+    }
+}

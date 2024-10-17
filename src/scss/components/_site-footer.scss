@@ -1,0 +1,204 @@
+.site-footer {
+    padding: 104px 0;
+    background: #e2e2e2;
+
+    @media (max-width: 992px) {
+        padding: 80px 0;
+    }
+
+    @media (max-width: 767px) {
+        padding: 48px 0;
+    }
+
+    &__body {
+        padding-bottom: 56px;
+        margin-bottom: 56px;
+        border-bottom: 1px solid #393939;
+        display: grid;
+        grid-template-columns: 264px 1fr 192px;
+        gap: 24px;
+
+        @media (max-width: 992px) {
+            grid-template-columns: 180px 1fr 180px;
+        }
+
+        @media (max-width: 767px) {
+            padding-bottom: 32px;
+            margin-bottom: 32px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            column-gap: 32px;
+            row-gap: 48px;
+        }
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+            gap: 48px;
+        }
+    }
+
+    &__left {
+        @media (max-width: 767px) {
+            order: 1;
+        }
+
+        @media (max-width: 576px) {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 32px;
+        }
+    }
+
+    &__logo {
+        margin-bottom: 24px;
+        aspect-ratio: 264/108;
+
+        @media (max-width: 576px) {
+            margin: 0;
+            width: 140px;
+        }
+    }
+
+    &__socials {
+    }
+
+    &__form {
+        @media (max-width: 767px) {
+            width: 100%;
+            order: 3;
+        }
+
+        &-title {
+            margin-bottom: 24px;
+            font-size: 24px;
+            line-height: toProcent(24, 28);
+            font-family: $fontFamilyAccent;
+            text-transform: uppercase;
+
+            @media (min-width: 1200px) {
+                margin-left: 5px;
+            }
+
+            @media (max-width: 992px) {
+                font-size: 20px;
+            }
+        }
+
+        &-wrapper {
+        }
+
+        &-checkboxes {
+            margin-bottom: 37px;
+            display: flex;
+            column-gap: 24px;
+            row-gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        &-checkbox {
+        }
+
+        &-body {
+            display: flex;
+            gap: 8px;
+
+            @media (max-width: 370px) {
+                flex-direction: column;
+                gap: 16px;
+            }
+        }
+
+        &-item {
+            flex: 1;
+        }
+
+        &-input {
+        }
+
+        &-button {
+            padding: 16px 25px;
+        }
+    }
+
+    &__contacts {
+        @media (max-width: 767px) {
+            order: 2;
+        }
+
+        &-title {
+            margin-bottom: 24px;
+            font-size: 24px;
+            line-height: toProcent(24, 28);
+            font-family: $fontFamilyAccent;
+            text-transform: uppercase;
+
+            @media (max-width: 992px) {
+                font-size: 20px;
+            }
+        }
+
+        &-list {
+        }
+    }
+
+    &__contact {
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+
+        &-link {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 14px;
+            line-height: toProcent(14, 20);
+
+            &:hover {
+                color: $colorMain;
+            }
+        }
+
+        &-icon {
+            width: 24px;
+            height: 24px;
+            flex: none;
+        }
+
+        &-text {
+        }
+    }
+
+    &__terms {
+        display: flex;
+        gap: 10px;
+
+        &-item {
+            position: relative;
+
+            &:not(:last-child) {
+                &::after {
+                    content: "|";
+                    position: absolute;
+                    top: 50%;
+                    left: calc(100% + 3px);
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
+        &-link {
+            font-size: 14px;
+            line-height: toProcent(14, 20);
+            display: block;
+            border-bottom: 1px solid transparent;
+
+            &:hover {
+                border-color: $colorMain;
+                color: $colorMain;
+            }
+        }
+    }
+}

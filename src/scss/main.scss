@@ -1,0 +1,61 @@
+@use "sass:math";
+
+//*<Base>=======================================================================================================
+
+@import "base/fonts";
+@import "base/function";
+@import "base/animation";
+@import "base/variables";
+@import "base/mixins";
+@import "base/reset";
+@import "base/common";
+@import "base/main-grid";
+
+//*</Base>=====================================================================================================
+
+//*<Components>================================================================================================
+
+@import "components/socials";
+@import "components/button";
+@import "components/burger";
+@import "components/menu";
+@import "components/input";
+@import "components/textarea";
+@import "components/checkbox";
+@import "components/section";
+@import "components/social-cards";
+@import "components/cards-with-icons";
+@import "components/range";
+@import "components/review";
+@import "components/object-card";
+@import "components/whatsapp-widjet";
+@import "components/step-card";
+@import "components/property-parameters";
+@import "components/quiz";
+@import "components/selector";
+@import "components/pagination";
+@import "components/feedback-form";
+@import "components/popup";
+@import "components/overlay";
+@import "components/catalog-loader";
+@import "components/site-header";
+@import "components/site-footer";
+
+//*</Components>=================================================================================================
+
+//*<Blocks>=================================================================================================
+
+@import "blocks/hero";
+@import "blocks/virtual-tours";
+@import "blocks/objects-slider";
+@import "blocks/faqs";
+@import "blocks/reviews";
+@import "blocks/contact-us";
+@import "blocks/image-block";
+@import "blocks/contacts";
+@import "blocks/our-specializations";
+@import "blocks/steps";
+@import "blocks/properties-search";
+@import "blocks/catalog";
+
+//*</Blocks>=================================================================================================

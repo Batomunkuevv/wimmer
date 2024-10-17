@@ -1,0 +1,16 @@
+.catalog-loader {
+    margin: 128px 0;
+
+    &__text {
+        font-family: $fontFamilyAccent;
+        font-size: 40px;
+        line-height: toProcent(40, 47);
+        text-transform: uppercase;
+        text-align: center;
+        color: $colorMain;
+
+        @media (max-width: 992px) {
+            font-size: 32px;
+        }
+    }
+}

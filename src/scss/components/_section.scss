@@ -1,0 +1,48 @@
+.section {
+    &__header {
+        margin-bottom: 56px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        @media (max-width: 992px) {
+            margin-bottom: 40px;
+        }
+
+        &::before {
+            margin-bottom: 48px;
+            content: "";
+            width: 2px;
+            height: 88px;
+            display: block;
+            background: $colorAction;
+
+            @media(max-width: 992px){
+                margin-bottom: 32px;
+                height: 64px;
+            }
+        }
+    }
+
+    &__subtitle {
+        max-width: 600px;
+        margin-bottom: 12px;
+        color: #696969;
+    }
+
+    &__title {
+        max-width: 600px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__text {
+        max-width: 744px;
+        color: #696969;
+        font-size: 14px;
+        line-height: toProcent(14, 24);
+    }
+}

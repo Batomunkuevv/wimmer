@@ -1,0 +1,9 @@
+.image-block {
+    &__body {
+        aspect-ratio: 1128/480;
+
+        @media(max-width: 767px){
+            aspect-ratio: 16/9;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.pagination {
+    display: flex;
+    gap: 4px;
+
+    &__item {
+    }
+
+    &__button {
+        font-size: 14px;
+        line-height: toProcent(14, 24);
+        color: #696969;
+        border-bottom: 2px solid transparent;
+        transition: all 0.3s ease-in-out 0s;
+
+        &:hover {
+            color: $colorAction;
+        }
+
+        &.is-current {
+            color: $colorFont;
+            border-color: $colorAction;
+            pointer-events: none;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.feedback-form {
+    text-align: center;
+
+    &__subtitle {
+        margin-bottom: 12px;
+        color: #757575;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        font-family: $fontFamilyAccent;
+        font-size: 24px;
+        line-height: toProcent(24, 28);
+        text-transform: uppercase;
+    }
+
+    &__body {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__item {
+    }
+
+    &__input {
+    }
+
+    &__button {
+        width: 100%;
+    }
+}

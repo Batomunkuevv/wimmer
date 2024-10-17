@@ -1,0 +1,64 @@
+.reviews {
+    position: relative;
+
+    &__body {
+        @media (max-width: 1232px) {
+            overflow: visible !important;
+        }
+    }
+
+    &__wrapper {
+    }
+
+    &__slide {
+    }
+
+    &__arrows {
+        @media (max-width: 1232px) {
+            margin-top: 48px;
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+        }
+    }
+
+    &__arrow {
+        padding: 6px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-59%);
+        z-index: 100;
+        width: 48px;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease-in-out 0s;
+
+        @media (max-width: 1232px) {
+            position: static;
+            transform: unset;
+        }
+
+        &:hover {
+            color: $colorAction;
+        }
+
+        &--prev {
+            @media (min-width: 1232px) {
+                transform: translateY(-59%) scale(-1);
+                right: calc(100% + 12px);
+            }
+
+            @media (max-width: 1232px) {
+                transform: scale(-1);
+            }
+        }
+
+        &--next {
+            @media (min-width: 1232px) {
+                left: calc(100% + 12px);
+            }
+        }
+    }
+}

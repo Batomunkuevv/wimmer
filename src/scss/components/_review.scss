@@ -1,0 +1,14 @@
+.review {
+    padding: 8px;
+    border: 1px solid #bcbcbc;
+    background: #e2e2e2;
+    position: relative;
+
+    @media(max-width: 1200px){
+        aspect-ratio: 16/9;
+    }
+
+    &__video {
+        border: 1px solid $colorAction;
+    }
+}

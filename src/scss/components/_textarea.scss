@@ -1,0 +1,29 @@
+.textarea {
+    padding: 12px 16px;
+    display: block;
+    width: 100%;
+    height: 128px;
+    border: 1px solid #bcbcbc;
+    font-size: 14px;
+    line-height: toProcent(14, 24);
+    transition: all 0.3s ease-in-out 0s;
+    resize: none;
+
+    &:hover {
+        border-color: $colorMain;
+    }
+
+    &:focus {
+        border-color: $colorAction;
+    }
+
+    &::-webkit-input-placeholder {
+        opacity: 1;
+        color: #b0b0b0;
+    }
+
+    &::-moz-placeholder {
+        opacity: 1;
+        color: #b0b0b0;
+    }
+}

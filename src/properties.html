@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/components/_head.html',{})
+    <body>
+        <div class="wrapper">
+            @@include('html/components/_header.html',{})
+            <main class="site-page">
+                <h1 class="visually-hidden">Immobilien in Deutschland kaufen</h1>
+                <div id="properties-catalog"></div>
+            </main>
+            @@include('html/components/_footer.html',{})
+            <div id="quiz"></div>
+        </div>
+        <script defer src="./js/lozad.min.js"></script>
+        <script defer src="./js/quiz.js"></script>
+        <script defer src="./js/script.js"></script>
+        <script defer src="./js/properties-catalog.js"></script>
+    </body>
+</html>

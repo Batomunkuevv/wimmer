@@ -1,0 +1,48 @@
+.whatsapp-widjet {
+    position: fixed;
+    bottom: 32px;
+    right: 64px;
+    padding: 18px;
+    width: 80px;
+    aspect-ratio: 1/1;
+    background: $colorMain;
+    border-radius: 50%;
+
+    @media (max-width: 576px) {
+        width: 64px;
+        right: 32px;
+    }
+
+    @media (max-width: 370px) {
+        padding: 12px;
+        width: 48px;
+    }
+
+    &:hover {
+        background: $colorAction;
+
+        &::before,
+        &::after {
+            border-color: $colorAction;
+        }
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        border: 2px solid $colorMain;
+        width: calc(100% + 8px);
+        height: calc(100% + 8px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        border-radius: 50%;
+        animation: pulse 2.5s linear infinite;
+    }
+
+    &::after {
+        animation-delay: 1.25s;
+    }
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/components/_head.html',{})
+    <body>
+        <div class="wrapper">
+            @@include('html/components/_header.html',{})
+            <main class="site-page">
+                @@include('html/services/_hero.html',{})
+                @@include('html/services/_our-offer.html',{})
+                @@include('html/blocks/_steps.html',{})
+                @@include('html/blocks/_virtual-tours.html',{})
+                @@include('html/services/_our-specializations.html',{})
+            </main>
+            @@include('html/components/_footer.html',{})
+            <div id="quiz"></div>
+        </div>
+        <script defer src="./js/swiper.min.js"></script>
+        <script defer src="./js/lozad.min.js"></script>
+        <script defer src="./js/quiz.js"></script>
+        <script defer src="./js/script.js"></script>
+    </body>
+</html>

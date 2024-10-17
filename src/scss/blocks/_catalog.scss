@@ -1,0 +1,107 @@
+.catalog {
+    &__title {
+        margin-bottom: 33px;
+
+        @media (min-width: 1200px) {
+            font-size: 56px;
+        }
+    }
+
+    &__list {
+        margin-bottom: 56px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        gap: 24px;
+
+        @media (max-width: 992px) {
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 576px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__top {
+        margin-bottom: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 32px;
+        row-gap: 16px;
+
+        @media (max-width: 992px) {
+            margin-bottom: 48px;
+        }
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+
+    &__all {
+        color: #696969;
+    }
+
+    &__sort {
+        &-button {
+            font-size: 16px;
+            line-height: 150%;
+            gap: 8px;
+            background: #e2e2e2;
+
+            @media (min-width: 576px) {
+                padding: 4px 16px 4px 20px;
+                height: 32px;
+            }
+
+            @media (max-width: 576px) {
+                width: 100%;
+            }
+
+            &-text {
+                & span {
+                    color: #696969;
+                }
+            }
+        }
+
+        &-dropdown {
+            background: #e2e2e2;
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__arrow {
+        padding: 12px;
+        width: 48px;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out 0s;
+
+        &:disabled {
+            pointer-events: none;
+        }
+
+        &:hover {
+            background: #e2e2e2;
+            color: $colorAction;
+        }
+
+        &--prev {
+            transform: scale(-1);
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.contact-us {
+    &__body {
+        margin-bottom: 24px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+
+        @media (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        &--full {
+            grid-column: span 2;
+        }
+    }
+
+    &__label {
+        margin-bottom: 12px;
+        font-family: $fontFamilyAccent;
+        font-size: 14px;
+        line-height: toProcent(14, 16);
+        text-transform: uppercase;
+        display: block;
+
+        &.is-required {
+            &::after {
+                content: " *";
+                color: $colorRed;
+                font-family: $fontFamily;
+            }
+        }
+    }
+
+    &__input {
+    }
+
+    &__textarea {
+    }
+
+    &__checkbox {
+        margin-bottom: 32px;
+    }
+
+    &__button {
+        width: 100%;
+    }
+}

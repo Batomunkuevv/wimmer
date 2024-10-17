@@ -1,0 +1,41 @@
+<section class="section">
+    <div class="container">
+        <header class="section__header">
+            <p class="section__subtitle">Unsere Spezialisten werden Ihnen antworten</p>
+            <h2 class="section__title">Schreiben Sie uns</h2>
+        </header>
+        <form action="#" class="contact-us">
+            <div class="contact-us__body">
+                <div class="contact-us__item">
+                    <label for="name" class="contact-us__label is-required">Name</label>
+                    <input id="name" class="contact-us__input input" type="text" name="name" placeholder="Bitte geben Sie Ihren Namen ein" required />
+                </div>
+                <div class="contact-us__item">
+                    <label for="phone" class="contact-us__label">Telefonnummer</label>
+                    <input id="phone" class="contact-us__input input" type="tel" name="phone" placeholder="Geben Sie Ihre Nummer ein" />
+                </div>
+                <div class="contact-us__item contact-us__item--full">
+                    <label for="email" class="contact-us__label is-required">E-Mail-Adresse</label>
+                    <input
+                        id="email"
+                        class="contact-us__input input"
+                        type="email"
+                        name="email"
+                        placeholder="Bitte geben Sie Ihre E-Mail Adresse ein"
+                        required
+                    />
+                </div>
+                <div class="contact-us__item contact-us__item--full">
+                    <label for="comment" class="contact-us__label is-required">Nachricht</label>
+                    <textarea id="comment" class="contact-us__textarea textarea" name="comment" placeholder="Schreiben Sie Ihre Nachricht" required></textarea>
+                </div>
+            </div>
+            <label class="contact-us__checkbox checkbox">
+                <input type="checkbox" name="policy" class="checkbox__input visually-hidden" />
+                <div class="checkbox__indicator"></div>
+                <div class="checkbox__text">Ich stimme dem Datenschutz zu</div>
+            </label>
+            <button class="contact-us__button button">abschicken</button>
+        </form>
+    </div>
+</section>

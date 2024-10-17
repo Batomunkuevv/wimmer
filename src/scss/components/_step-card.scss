@@ -1,0 +1,79 @@
+.step-card {
+    display: grid;
+    grid-template-columns: 1fr 1.04fr;
+
+    @media (min-width: 992px) {
+        min-height: 464px;
+    }
+
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__image {
+        height: 100%;
+
+        @media (max-width: 767px) {
+            aspect-ratio: 12/9;
+        }
+    }
+
+    &__content {
+        padding: 64px 48px 80px;
+        display: flex;
+        flex-direction: column;
+        background: #e2e2e2;
+        border: 1px solid #bcbcbc;
+        border-left: unset;
+
+        @media (max-width: 1200px) {
+            padding: 48px 32px;
+        }
+
+        @media (max-width: 992px) {
+            padding: 24px 16px;
+        }
+    }
+
+    &__title {
+    }
+
+    &__text {
+        margin-bottom: 64px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 48px;
+        }
+    }
+
+    &__buttons {
+        margin-top: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+
+        @media (max-width: 992px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (max-width: 767px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media(max-width: 576px){
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__button {
+        padding: 16px;
+
+        @media (max-width: 992px) {
+            font-size: 12px;
+        }
+    }
+}

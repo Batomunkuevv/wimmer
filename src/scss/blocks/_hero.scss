@@ -1,0 +1,98 @@
+.hero {
+    &--has-quiz {
+        & .hero__content {
+            @media (min-width: 767px) {
+                padding-bottom: 179px;
+            }
+        }
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
+
+    &__content {
+        padding: 48px 35px;
+        background: url("../images/homepage/hero/background.png") center / cover no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        @media (max-width: 992px) {
+            padding: 24px 16px;
+        }
+
+        @media (max-width: 767px) {
+            padding: 56px 16px;
+        }
+
+        @supports (background: url("../images/homepage/hero/background.webp")) {
+            background: url("../images/homepage/hero/background.webp") center / cover no-repeat;
+        }
+
+        &--centered-items {
+            justify-content: center;
+        }
+
+        &-image {
+            margin-bottom: 56px;
+            aspect-ratio: 494/242;
+
+            @media (max-width: 767px) {
+                max-width: 70%;
+            }
+
+            @media (max-width: 479px) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 12px;
+        max-width: 354px;
+        color: #757575;
+    }
+
+    &__title {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__form {
+        width: 100%;
+        max-width: 436px;
+    }
+
+    &__image {
+        height: 100%;
+
+        @media (max-width: 767px) {
+            aspect-ratio: 1/1;
+        }
+    }
+
+    &__quiz {
+        margin-top: -126px;
+        border: 1px solid #bcbcbc;
+
+        @media (min-width: 767px) {
+            min-height: unset;
+        }
+
+        @media (max-width: 576px) {
+            margin-top: -200px;
+        }
+
+        @media (max-width: 370px) {
+            margin-top: -144px;
+        }
+    }
+}

@@ -1,0 +1,224 @@
+.site-header {
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    transition: all 0.3s ease-in-out 0s;
+
+    &.is-scrolling {
+        box-shadow: 0 0 16px 16px rgba(0, 0, 0, 0.05);
+    }
+
+    &.is-scrolling-down {
+        transform: translateY(-100%);
+    }
+
+    &__body {
+        @media (max-width: 1200px) {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        @media (max-width: 992px) {
+            justify-content: space-between;
+        }
+    }
+
+    &__overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease-in-out 0s;
+
+        @media (max-width: 576px) {
+            display: none;
+        }
+
+        &.is-visible {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__panel {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 1200px) {
+            flex: 1;
+        }
+
+        @media (max-width: 992px) {
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 371px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0;
+            background: #fff;
+            z-index: 102;
+            visibility: hidden;
+            transform: translateX(100%);
+            @include has-scrollbar;
+            transition: all 0.5s ease-in-out 0s;
+        }
+
+        @media (max-width: 576px) {
+            width: 100%;
+        }
+
+        &.is-open {
+            visibility: visible;
+            transform: unset;
+        }
+
+        &-top {
+            margin: 0 auto;
+
+            @media (max-width: 1200px) and (min-width: 992px) {
+                display: none;
+            }
+
+            @media (max-width: 992px) {
+                margin: 0 0 64px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 32px;
+                order: 1;
+            }
+        }
+
+        &-close {
+            width: 48px;
+            aspect-ratio: 1/1;
+            border: 2px solid $colorMain;
+            border-radius: 50%;
+            position: relative;
+            flex: none;
+
+            @media (min-width: 1200px) {
+                display: none;
+            }
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 52%;
+                height: 2px;
+                background: $colorMain;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+
+            &::after {
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+    }
+
+    &__logo {
+        width: 72px;
+        aspect-ratio: 1/1;
+
+        &:not(.site-header__logo--in-panel) {
+            @media (min-width: 1200px) {
+                display: none;
+            }
+        }
+    }
+
+    &__menu {
+        margin-top: -4px;
+        margin-right: 27px;
+
+        @media (max-width: 1200px) {
+            margin-right: auto;
+        }
+
+        @media (max-width: 992px) {
+            margin-bottom: auto;
+            order: 2;
+        }
+    }
+
+    &__socials {
+        margin-right: 64px;
+        margin-left: 16px;
+        white-space: nowrap;
+
+        @media (max-width: 1200px) {
+            margin: 0 24px;
+        }
+
+        @media (max-width: 992px) {
+            margin: 0 0 24px 0;
+            justify-content: start;
+            order: 3;
+        }
+    }
+
+    &__phone-button {
+        padding: 16px;
+        margin-right: 24px;
+        width: 48px;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $colorAction;
+        color: $colorAction;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out 0s;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+
+        &:hover {
+            background: $colorAction;
+            color: #fff;
+        }
+
+        & svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__phone {
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        order: 4;
+
+        @media (min-width: 992px) {
+            display: none;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 20px;
+            line-height: 122%;
+        }
+    }
+
+    &__button {
+        padding-left: 11px;
+        padding-right: 11px;
+
+        @media (max-width: 992px) {
+            order: 5;
+        }
+    }
+}

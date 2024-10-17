@@ -1,0 +1,32 @@
+.socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 8px;
+
+    @media (max-width: 576px) {
+        gap: 8px;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $colorFont;
+
+        @media (max-width: 576px) {
+            width: 24px;
+            height: 24px;
+        }
+
+        &:hover {
+            color: $colorMain;
+        }
+    }
+}

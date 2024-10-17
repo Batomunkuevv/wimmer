@@ -1,0 +1,135 @@
+.our-specializations {
+    padding: 78px 48px;
+    background: #e2e2e2;
+    border: 1px solid #bcbcbc;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__line {
+        position: absolute;
+        background: $colorAction;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            width: 12px;
+            aspect-ratio: 1/1;
+            background: $colorAction;
+            border: 2px solid #fff;
+        }
+
+        &--top {
+            top: 23px;
+            left: 35px;
+            right: 35px;
+            height: 2px;
+
+            @media (max-width: 576px) {
+                top: 16px;
+                left: 16px;
+                right: 16px;
+            }
+        }
+
+        &--bottom {
+            bottom: 23px;
+            left: 35px;
+            right: 35px;
+            height: 2px;
+
+            @media (max-width: 576px) {
+                bottom: 16px;
+                left: 16px;
+                right: 16px;
+            }
+        }
+
+        &--vertical {
+            top: 35px;
+            bottom: 35px;
+            width: 2px;
+
+            @media (max-width: 576px) {
+                top: 16px;
+                bottom: 16px;
+            }
+        }
+
+        &--right {
+            right: 22px;
+
+            @media (max-width: 576px) {
+                right: 16px;
+            }
+        }
+
+        &--left {
+            left: 22px;
+
+            @media (max-width: 576px) {
+                left: 16px;
+            }
+        }
+    }
+
+    &__logo {
+        margin-bottom: 32px;
+        width: 128px;
+        aspect-ratio: 1/1;
+
+        @media (max-width: 992px) {
+            width: 72px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 24px;
+    }
+
+    &__body {
+        width: 100%;
+        max-width: 744px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+
+        @media (max-width: 767px) {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+
+    &__list {
+    }
+
+    &__item {
+        padding-left: 24px;
+        position: relative;
+        text-align: left;
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 9px;
+            left: 0;
+            width: 8px;
+            aspect-ratio: 1/1;
+            background: $colorAction;
+            border-radius: 50%;
+        }
+    }
+}

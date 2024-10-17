@@ -1,0 +1,36 @@
+.virtual-tours {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    @media (min-width: 992px) {
+        grid-auto-flow: dense;
+        grid-auto-rows: 188px;
+    }
+
+    @media (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 576px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        @media (max-width: 992px) {
+            aspect-ratio: 16/9;
+        }
+
+        &:first-child,
+        &:nth-child(5),
+        &:nth-child(7),
+        &:nth-child(6n - 1),
+        &:nth-child(6n + 1) {
+            @media (min-width: 992px) {
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+        }
+    }
+}

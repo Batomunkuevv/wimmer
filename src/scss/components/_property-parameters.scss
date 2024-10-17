@@ -1,0 +1,152 @@
+.property-parameters {
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+        row-gap: 24px;
+
+        @media(max-width: 767px){
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+
+    &__range {
+        grid-column: span 2;
+
+        &-item {
+            margin-top: 24px;
+            margin-bottom: 13px;
+
+            @media(max-width: 767px){
+                margin-top: 32px;
+            }
+        }
+
+        &-marks {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 32px;
+
+            @media(max-width: 767px){
+                margin-bottom: 24px;
+            }
+        }
+
+        &-mark {
+            font-size: 14px;
+            line-height: toProcent(14, 16);
+        }
+
+        &-manual {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 16px;
+
+            @media(max-width: 370px){
+                flex-direction: column;
+                align-items: start;
+            }
+
+            &-text {
+                font-size: 14px;
+                line-height: toProcent(14, 24);
+            }
+
+            &-input {
+                width: 120px;
+                height: 32px;
+                text-align: center;
+            }
+        }
+    }
+
+    &__construction {
+        position: relative;
+
+        &-handlers {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: #e2e2e2;
+            border: 1px solid #bcbcbc;
+            width: 48px;
+            aspect-ratio: 1/1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 9px;
+        }
+
+        &-handler {
+            width: 0;
+            height: 0;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 5px solid #5f6368;
+            transition: all 0.3s ease-in-out 0s;
+
+            &:hover {
+                border-top-color: $colorAction;
+            }
+
+            &--decrement {
+                transform: scale(1, -1);
+            }
+        }
+    }
+
+    &__rooms {
+        &-body {
+            display: grid;
+            grid-template-columns: 48px 1fr 48px;
+            gap: 8px;
+        }
+
+        &-button {
+            height: 100%;
+            background: #e2e2e2;
+            border: 1px solid #bcbcbc;
+            position: relative;
+            transition: all 0.3s ease-in-out 0s;
+
+            &:hover {
+                border-color: $colorAction;
+
+                &::after,
+                &::before {
+                    background: $colorAction;
+                }
+            }
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 12px;
+                height: 1px;
+                background: $colorFont;
+                transition: all 0.3s ease-in-out 0s;
+            }
+
+            &--increment {
+                &::after {
+                    transform: translate(-50%, -50%) rotate(90deg);
+                }
+            }
+        }
+
+        &-input {
+            pointer-events: none;
+            text-align: center;
+        }
+    }
+}
