@@ -4,92 +4,1479 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Список страниц сайта — Wimmer</title>
-  <link rel="stylesheet" href="./project-table/css/libs/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./project-table/css/style.min.css" />
+  <title>Title</title>
+  <meta name="description" content="Description" />
+  <link rel="stylesheet" href="./css/swiper.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
 </head>
 
 <body>
   <div class="wrapper">
-    <main class="page">
-      <section class="project-page">
-        <div class="left-panel">
-          <div class="left-panel__item">Pages</div>
-          <div class="left-panel__item">Pages</div>
-          <div class="left-panel__item">Pages</div>
-          <div class="left-panel__item">Pages</div>
-          <div class="left-panel__item">Pages</div>
-          <div class="left-panel__item">Pages</div>
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header__body">
+          <a href="/" class="site-header__logo">
+            <img width="72" height="72" src="images/logo.svg" alt="Logo" title="Logo" />
+          </a>
+          <button class="site-header__burger burger">
+            <span class="burger__line"></span>
+          </button>
+          <div class="site-header__panel">
+            <nav class="site-header__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="/homepage.html" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item">
+                  <a href="/properties.html" class="menu__link">Immobilien</a>
+                </li>
+                <li class="menu__item">
+                  <a href="/services.html" class="menu__link">Serviceleistungen</a>
+                </li>
+                <li class="menu__item">
+                  <a href="/contacts.html" class="menu__link">Kontakt</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="site-header__panel-top">
+              <a href="/" class="site-header__logo site-header__logo--in-panel">
+                <img width="72" height="72" src="images/logo.svg" alt="Logo" title="Logo" />
+              </a>
+              <button type="button" class="site-header__panel-close"></button>
+            </div>
+            <ul class="site-header__socials socials">
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.2399 1.91992C5.65271 1.91992 1.91992 5.65271 1.91992 10.2399V21.7599C1.91992 26.3471 5.65271 30.0799 10.2399 30.0799H21.7599C26.3471 30.0799 30.0799 26.3471 30.0799 21.7599V10.2399C30.0799 5.65271 26.3471 1.91992 21.7599 1.91992H10.2399ZM10.2399 3.19992H21.7599C25.6553 3.19992 28.7999 6.34457 28.7999 10.2399V21.7599C28.7999 25.6553 25.6553 28.7999 21.7599 28.7999H10.2399C6.34457 28.7999 3.19992 25.6553 3.19992 21.7599V10.2399C3.19992 6.34457 6.34457 3.19992 10.2399 3.19992ZM23.6799 7.03992C23.3404 7.03992 23.0149 7.17478 22.7748 7.41483C22.5348 7.65487 22.3999 7.98045 22.3999 8.31992C22.3999 8.6594 22.5348 8.98497 22.7748 9.22502C23.0149 9.46507 23.3404 9.59992 23.6799 9.59992C24.0194 9.59992 24.345 9.46507 24.585 9.22502C24.8251 8.98497 24.9599 8.6594 24.9599 8.31992C24.9599 7.98045 24.8251 7.65487 24.585 7.41483C24.345 7.17478 24.0194 7.03992 23.6799 7.03992ZM15.9999 8.95992C12.1194 8.95992 8.95992 12.1194 8.95992 15.9999C8.95992 19.8804 12.1194 23.0399 15.9999 23.0399C19.8804 23.0399 23.0399 19.8804 23.0399 15.9999C23.0399 12.1194 19.8804 8.95992 15.9999 8.95992ZM15.9999 10.2399C19.1887 10.2399 21.7599 12.8112 21.7599 15.9999C21.7599 19.1887 19.1887 21.7599 15.9999 21.7599C12.8112 21.7599 10.2399 19.1887 10.2399 15.9999C10.2399 12.8112 12.8112 10.2399 15.9999 10.2399Z" fill="currentColor" />
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.75957 2.56006C3.99988 2.56006 2.55957 4.00037 2.55957 5.76006V26.2401C2.55957 27.9997 3.99988 29.4401 5.75957 29.4401H16.5321C16.6012 29.4515 16.6717 29.4515 16.7408 29.4401H20.3721C20.4412 29.4515 20.5117 29.4515 20.5808 29.4401H26.2396C27.9993 29.4401 29.4396 27.9997 29.4396 26.2401V5.76006C29.4396 4.00037 27.9993 2.56006 26.2396 2.56006H5.75957ZM5.75957 3.84006H26.2396C27.3074 3.84006 28.1596 4.69223 28.1596 5.76006V26.2401C28.1596 27.3079 27.3074 28.1601 26.2396 28.1601H21.1196V19.2001H23.5646L24.4608 14.7201H21.1196V13.4401C21.1196 13.0833 21.1535 13.0554 21.2733 12.9776C21.3931 12.8997 21.7633 12.8001 22.3996 12.8001H24.3196V9.19631L23.9546 9.02256C23.9546 9.02256 22.4845 8.32006 20.4796 8.32006C19.0396 8.32006 17.8566 8.89379 17.0996 9.84006C16.3426 10.7863 15.9996 12.0534 15.9996 13.4401V14.7201H14.0796V19.2001H15.9996V28.1601H5.75957C4.69174 28.1601 3.83957 27.3079 3.83957 26.2401V5.76006C3.83957 4.69223 4.69174 3.84006 5.75957 3.84006ZM20.4796 9.60006C21.8102 9.60006 22.6475 9.89347 23.0396 10.0488V11.5201H22.3996C21.663 11.5201 21.0728 11.581 20.5758 11.9038C20.0788 12.2266 19.8396 12.8394 19.8396 13.4401V16.0001H22.8983L22.5146 17.9201H19.8396V28.1601H17.2796V17.9201H15.3596V16.0001H17.2796V13.4401C17.2796 12.2667 17.5766 11.2938 18.0996 10.6401C18.6226 9.98633 19.3596 9.60006 20.4796 9.60006Z" fill="currentColor" />
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.75957 2.56006C3.99988 2.56006 2.55957 4.00037 2.55957 5.76006V26.2401C2.55957 27.9997 3.99988 29.4401 5.75957 29.4401H26.2396C27.9993 29.4401 29.4396 27.9997 29.4396 26.2401V5.76006C29.4396 4.00037 27.9993 2.56006 26.2396 2.56006H5.75957ZM5.75957 3.84006H26.2396C27.3074 3.84006 28.1596 4.69223 28.1596 5.76006V26.2401C28.1596 27.3079 27.3074 28.1601 26.2396 28.1601H5.75957C4.69174 28.1601 3.83957 27.3079 3.83957 26.2401V5.76006C3.83957 4.69223 4.69174 3.84006 5.75957 3.84006ZM8.95957 7.04756C8.25863 7.04756 7.62787 7.25707 7.16082 7.65006C6.69377 8.04305 6.40707 8.63015 6.40707 9.25881C6.40707 10.4538 7.44359 11.3854 8.76207 11.4776L8.76457 11.4788C8.8274 11.5002 8.8932 11.5116 8.95957 11.5126C10.4143 11.5126 11.5121 10.4936 11.5121 9.25881C11.512 9.24755 11.5115 9.23629 11.5108 9.22506C11.4457 8.00891 10.3615 7.04756 8.95957 7.04756ZM8.95957 8.31256C9.8506 8.31256 10.2024 8.71048 10.2408 9.27506C10.233 9.82306 9.89403 10.2476 8.95957 10.2476C8.07291 10.2476 7.67207 9.79348 7.67207 9.25881C7.67207 8.99147 7.76962 8.79001 7.97457 8.61756C8.17952 8.44511 8.50851 8.31256 8.95957 8.31256ZM7.03957 12.1601C6.86984 12.1601 6.70706 12.2275 6.58704 12.3475C6.46702 12.4675 6.39959 12.6303 6.39957 12.8001V24.9601C6.39959 25.1298 6.46702 25.2926 6.58704 25.4126C6.70706 25.5326 6.86984 25.6 7.03957 25.6001H10.8796C11.0493 25.6 11.2121 25.5326 11.3321 25.4126C11.4521 25.2926 11.5196 25.1298 11.5196 24.9601V21.2063V12.8001C11.5196 12.6303 11.4521 12.4675 11.3321 12.3475C11.2121 12.2275 11.0493 12.1601 10.8796 12.1601H7.03957ZM12.7996 12.1601C12.6298 12.1601 12.4671 12.2275 12.347 12.3475C12.227 12.4675 12.1596 12.6303 12.1596 12.8001V24.9601C12.1596 25.1298 12.227 25.2926 12.347 25.4126C12.4671 25.5326 12.6298 25.6 12.7996 25.6001H16.6396C16.8093 25.6 16.9721 25.5326 17.0921 25.4126C17.2121 25.2926 17.2796 25.1298 17.2796 24.9601V18.5601C17.2796 18.0291 17.4245 17.5009 17.6796 17.1551C17.9347 16.8092 18.2565 16.6017 18.8683 16.6126C19.4992 16.6234 19.8332 16.8395 20.0858 17.1788C20.3385 17.5181 20.4796 18.0267 20.4796 18.5601V24.9601C20.4796 25.1298 20.547 25.2926 20.667 25.4126C20.7871 25.5326 20.9498 25.6 21.1196 25.6001H24.9596C25.1293 25.6 25.2921 25.5326 25.4121 25.4126C25.5321 25.2926 25.5996 25.1298 25.5996 24.9601V18.0876C25.5996 16.1922 25.0382 14.6908 24.0758 13.6751C23.1135 12.6593 21.775 12.1601 20.3596 12.1601C19.0143 12.1601 17.9905 12.6112 17.2796 13.0713V12.8001C17.2796 12.6303 17.2121 12.4675 17.0921 12.3475C16.9721 12.2275 16.8093 12.1601 16.6396 12.1601H12.7996ZM7.67957 13.4401H10.2396V21.2063V24.3201H7.67957V13.4401ZM13.4396 13.4401H15.9996V14.4388C15.9996 14.573 16.0418 14.7038 16.1203 14.8127C16.1987 14.9216 16.3094 15.0031 16.4366 15.0456C16.5639 15.0882 16.7013 15.0897 16.8295 15.0499C16.9577 15.0101 17.0701 14.931 17.1508 14.8238C17.1508 14.8238 18.1559 13.4401 20.3596 13.4401C21.4817 13.4401 22.444 13.8129 23.1471 14.5551C23.8502 15.2972 24.3196 16.4405 24.3196 18.0876V24.3201H21.7596V18.5601C21.7596 17.8134 21.5807 17.0414 21.1133 16.4138C20.646 15.7862 19.8599 15.3492 18.8908 15.3326C17.9167 15.3153 17.118 15.7613 16.6496 16.3963C16.1812 17.0313 15.9996 17.811 15.9996 18.5601V24.3201H13.4396V13.4401Z" fill="currentColor" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <a href="tel:+49888778899" class="site-header__phone-button">
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.077 8.4615C14.9615 6.57567 14.2438 4.97283 12.924 3.653C11.6042 2.333 10.0013 1.61533 8.1155 1.5V0.5C9.19883 0.551333 10.2126 0.792 11.1568 1.222C12.1009 1.65217 12.9291 2.22333 13.6413 2.9355C14.3534 3.64767 14.9246 4.47592 15.3548 5.42025C15.7849 6.36442 16.0257 7.37817 16.077 8.4615H15.077ZM11.077 8.4615C10.9615 7.69233 10.6313 7.03208 10.0865 6.48075C9.54167 5.92942 8.88467 5.6025 8.1155 5.5V4.5C9.1655 4.6025 10.0593 5.02592 10.797 5.77025C11.5348 6.51442 11.9615 7.4115 12.077 8.4615H11.077ZM14.9308 17C13.2449 17 11.5168 16.5779 9.74625 15.7337C7.97575 14.8894 6.32767 13.7044 4.802 12.1788C3.28917 10.6532 2.11058 9.00842 1.26625 7.24425C0.422083 5.48008 0 3.75508 0 2.06925C0 1.76925 0.1 1.516 0.3 1.3095C0.5 1.10317 0.75 1 1.05 1H3.523C3.79483 1 4.032 1.08558 4.2345 1.25675C4.43717 1.42792 4.57442 1.6475 4.64625 1.9155L5.14225 4.3C5.18842 4.5795 5.18008 4.82375 5.11725 5.03275C5.05442 5.24175 4.9435 5.41292 4.7845 5.54625L2.5905 7.59225C3.00067 8.33708 3.45417 9.02908 3.951 9.66825C4.44783 10.3074 4.97767 10.9128 5.5405 11.4845C6.12117 12.0653 6.74617 12.6054 7.4155 13.1048C8.08467 13.6041 8.81925 14.0756 9.61925 14.5193L11.7578 12.3422C11.9206 12.1666 12.1036 12.0509 12.3068 11.9952C12.5099 11.9394 12.7346 11.9282 12.9808 11.9615L15.0845 12.3923C15.3563 12.4589 15.5769 12.5958 15.7463 12.803C15.9154 13.01 16 13.2475 16 13.5155V15.95C16 16.25 15.8968 16.5 15.6905 16.7C15.484 16.9 15.2308 17 14.9308 17ZM2.12125 6.65375L4.0405 4.8885C4.1045 4.83717 4.14617 4.76667 4.1655 4.677C4.18467 4.58717 4.18142 4.50383 4.15575 4.427L3.7115 2.30775C3.68583 2.20508 3.641 2.12817 3.577 2.077C3.51283 2.02567 3.4295 2 3.327 2H1.275C1.198 2 1.13392 2.02567 1.08275 2.077C1.03142 2.12817 1.00575 2.19225 1.00575 2.26925C1.02492 2.95258 1.132 3.666 1.327 4.4095C1.52183 5.15317 1.78658 5.90125 2.12125 6.65375ZM10.5712 14.9885C11.2468 15.3232 11.9669 15.5706 12.7318 15.7308C13.4964 15.8911 14.1628 15.977 14.7308 15.9885C14.8078 15.9885 14.8718 15.9628 14.923 15.9115C14.9743 15.8602 15 15.7961 15 15.7193V13.7115C15 13.609 14.9743 13.5257 14.923 13.4615C14.8718 13.3975 14.7949 13.3527 14.6923 13.327L12.8423 12.948C12.7654 12.9223 12.6982 12.9192 12.6405 12.9385C12.5827 12.9577 12.5218 12.9993 12.4578 13.0635L10.5712 14.9885Z" fill="currentColor" />
+              </svg>
+            </a>
+            <a href="tel:+49888778899" class="site-header__phone">
+              <span class="site-header__phone-icon">
+                <img width="24" height="24" data-lozad src="images/placeholder.png" data-src="images/icons/phone.svg" alt="Phone" title="Phone" />
+              </span>
+              <span class="site-header__phone-text">+49 888 77 88 99</span>
+            </a>
+            <button type="button" data-popup-btn="feedback" class="site-header__button button"> Jetzt kontaktieren </button>
+          </div>
         </div>
-        <div class="project-page__wrapper">
-          <div class="container">
-            <div class="project-page__slogan">
-              <div class="project-page__slogan-body">
-                <div class="project-page__slogan-icon">
-                  <img width="96" height="83" src="./project-table/images/heart.svg" alt="Heart" title="Heart" />
+      </div>
+      <div class="site-header__overlay"></div>
+    </header>
+
+    <main class="site-page">
+      <section id="hero" class="hero hero--has-quiz">
+        <div class="container">
+          <div class="hero__body">
+            <div class="hero__content">
+              <p class="hero__subtitle">Ihr Immobilienmakler mit ausgezeichneten Vermittlungsleistungen</p>
+              <h1 class="hero__title">DER BESTE WEG, IHRE IMMOBILIE ZU VERKAUFEN, ZU KAUFEN</h1>
+              <form action="#" class="hero__form feedback-form">
+                <p class="feedback-form__subtitle">Feedback von unseren Spezialisten</p>
+                <div class="feedback-form__title">Lassen Sie sich beraten, jetzt gleich!</div>
+                <div class="feedback-form__body">
+                  <div class="feedback-form__item">
+                    <input type="text" name="name" placeholder="Name" class="feeback-form__input input" />
+                  </div>
+                  <div class="feedback-form__item">
+                    <input type="text" name="surname" placeholder="Nachname" class="feeback-form__input input" />
+                  </div>
+                  <div class="feedback-form__item">
+                    <input type="email" name="email" placeholder="E-mail" class="feeback-form__input input" />
+                  </div>
+                  <div class="feedback-form__item">
+                    <input type="tel" name="phone" placeholder="Telefon" class="feeback-form__input input" />
+                  </div>
+                </div>
+                <button class="feedback-form__button button button--black">jetzt anfragen</button>
+              </form>
+            </div>
+            <div class="hero__image">
+              <picture>
+                <source srcset="images/homepage/hero/image@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                <source srcset="images/homepage/hero/image.webp" type="image/webp" />
+                <source srcset="images/homepage/hero/image@2x.png" media="(min-resolution: 2dppx)" />
+                <img width="564" height="840" src="images/homepage/hero/image.png" alt="Image" title="Image" />
+              </picture>
+            </div>
+          </div>
+          <div class="hero__quiz quiz">
+            <div class="quiz__body quiz__body--in-hero">
+              <div class="quiz__title quiz__title--in-hero">Welche Immobilie möchten Sie bewerten?</div>
+              <ul class="quiz__variants quiz__variants--types-of-building">
+                <li data-start-quiz="Wohnung" class="quiz__variant quiz__variant--type-of-building">
+                  <div class="quiz__variant-icon quiz__variant-icon--type-of-building">
+                    <img width="56" height="56" src="images/quiz/types-of-building/01.svg" alt="Icon" title="Icon" />
+                  </div>
+                  <div class="quiz__variant-name">Wohnung</div>
+                </li>
+                <li data-start-quiz="Einfamilienhaus" class="quiz__variant quiz__variant--type-of-building">
+                  <div class="quiz__variant-icon quiz__variant-icon--type-of-building">
+                    <img width="56" height="56" src="images/quiz/types-of-building/02.svg" alt="Icon" title="Icon" />
+                  </div>
+                  <div class="quiz__variant-name">Einfamilienhaus</div>
+                </li>
+                <li data-start-quiz="Mehrfamilienhaus" class="quiz__variant quiz__variant--type-of-building">
+                  <div class="quiz__variant-icon quiz__variant-icon--type-of-building">
+                    <img width="56" height="56" src="images/quiz/types-of-building/03.svg" alt="Icon" title="Icon" />
+                  </div>
+                  <div class="quiz__variant-name">Mehrfamilienhaus</div>
+                </li>
+              </ul>
+            </div>
+            <ul class="quiz__advantages">
+              <li class="quiz__advantages-item">Immobilienwertrechner</li>
+              <li class="quiz__advantages-item">Sofortige Ergebnisanzeige</li>
+              <li class="quiz__advantages-item">Digitale Verkaufssimulation</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <header class="section__header">
+            <p class="section__subtitle">Unser Angebot</p>
+            <h2 class="section__title">Wir helfen beim Kauf, Verkauf von Immobilien</h2>
+            <p class="section__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum
+            </p>
+          </header>
+          <ul class="cards-with-icons">
+            <li class="cards-with-icons__item">
+              <div class="cards-with-icons__item-icon">
+                <img width="72" height="72" data-lozad src="images/placeholder.png" data-src="images/homepage/our-offer/01.svg" alt="Icon" title="Icon" />
+              </div>
+              <h3 class="cards-with-icons__item-title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h3>
+              <p class="cards-with-icons__item-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa
+              </p>
+            </li>
+            <li class="cards-with-icons__item">
+              <div class="cards-with-icons__item-icon">
+                <img width="72" height="72" data-lozad src="images/placeholder.png" data-src="images/homepage/our-offer/02.svg" alt="Icon" title="Icon" />
+              </div>
+              <h3 class="cards-with-icons__item-title">Duis aute irure dolor in reprehenderit in voluptate velit</h3>
+              <p class="cards-with-icons__item-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco
+              </p>
+            </li>
+            <li class="cards-with-icons__item">
+              <div class="cards-with-icons__item-icon">
+                <img width="72" height="72" data-lozad src="images/placeholder.png" data-src="images/homepage/our-offer/03.svg" alt="Icon" title="Icon" />
+              </div>
+              <h3 class="cards-with-icons__item-title">Ut enim ad minima veniam, quis nostrum exercitationem</h3>
+              <p class="cards-with-icons__item-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              </p>
+            </li>
+            <li class="cards-with-icons__item">
+              <div class="cards-with-icons__item-icon">
+                <img width="72" height="72" data-lozad src="images/placeholder.png" data-src="images/homepage/our-offer/04.svg" alt="Icon" title="Icon" />
+              </div>
+              <h3 class="cards-with-icons__item-title">Quis autem vel eum iure reprehenderit qui in ea voluptate autem vel</h3>
+              <p class="cards-with-icons__item-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <header class="section__header">
+            <p class="section__subtitle">Transparenter Prozess</p>
+            <h2 class="section__title">In <span>10</span> Schritten zum Erfolg</h2>
+            <p class="section__text">
+              Ein schneller, unkomplizierter und sich lohnender Kaufabschluss hängt von verschiedenen Faktoren ab.
+              <br />
+              Stehen Ihnen erfahrene Immobilienexpert:innen zur Seite, die Sie bei jedem einzelnen
+              <br />Vermarktungsschritt transparent beraten und begleiten.
+            </p>
+          </header>
+          <div class="steps">
+            <ul data-accordion class="steps__tabs">
+              <li data-fold class="steps__tab">
+                <div data-fold-btn class="steps__tab-button is-active">
+                  <div class="steps__tab-icon">
+                    <img width="48" height="48" data-lozad src="images/placeholder.png" data-src="images/blocks/steps/01.svg" alt="Icon" title="Icon" />
+                  </div>
+                  <div class="steps__tab-name">Verkaufspreis</div>
+                  <div class="steps__tab-plus"></div>
+                </div>
+                <div data-fold-content class="steps__tab-wrapper is-expanded">
+                  <div class="steps__tab-content step-card">
+                    <div class="step-card__image">
+                      <picture data-lozad>
+                        <source srcset="images/blocks/steps/image@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                        <source srcset="images/blocks/steps/image.webp" type="image/webp" />
+                        <source srcset="images/blocks/steps/image@2x.png" media="(min-resolution: 2dppx)" />
+                        <source srcset="images/blocks/steps/image.png" />
+                        <img src="images/placeholder.png" alt="Image" title="Image" />
+                      </picture>
+                    </div>
+                    <div class="step-card__content">
+                      <h3 class="step-card__title">Verkaufspreis</h3>
+                      <div class="step-card__text">
+                        <p>
+                          Unsere Experten nehmen eine Bewertung Ihrer Immobilie vor, um den aktuellen Marktwert zu ermitteln. Dieser Service ist
+                          für Sie kostenlos, unverbindlich und zeitsparend.
+                        </p>
+                      </div>
+                      <div class="step-card__buttons">
+                        <button type="button" data-popup-btn="feedback" class="step-card__button button button--black">Jetzt kontaktieren</button>
+                        <a data-anchor href="#hero" class="step-card__button button">Bewertung des Objekts</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li data-fold class="steps__tab">
+                <div data-fold-btn class="steps__tab-button">
+                  <div class="steps__tab-icon">
+                    <img width="48" height="48" data-lozad src="images/placeholder.png" data-src="images/blocks/steps/02.svg" alt="Icon" title="Icon" />
+                  </div>
+                  <div class="steps__tab-name">Profesionelle Fotos</div>
+                  <div class="steps__tab-plus"></div>
+                </div>
+                <div data-fold-content class="steps__tab-wrapper">
+                  <div class="steps__tab-content step-card">
+                    <div class="step-card__image">
+                      <picture data-lozad>
+                        <source srcset="images/blocks/steps/image@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                        <source srcset="images/blocks/steps/image.webp" type="image/webp" />
+                        <source srcset="images/blocks/steps/image@2x.png" media="(min-resolution: 2dppx)" />
+                        <source srcset="images/blocks/steps/image.png" />
+                        <img src="images/placeholder.png" alt="Image" title="Image" />
+                      </picture>
+                    </div>
+                    <div class="step-card__content">
+                      <h3 class="step-card__title">Profesionelle Fotos</h3>
+                      <div class="step-card__text">
+                        <p>
+                          Unsere Experten nehmen eine Bewertung Ihrer Immobilie vor, um den aktuellen Marktwert zu ermitteln. Dieser Service ist
+                          für Sie kostenlos, unverbindlich und zeitsparend.
+                        </p>
+                      </div>
+                      <div class="step-card__buttons">
+                        <button type="button" data-popup-btn="feedback" class="step-card__button button button--black">Jetzt kontaktieren</button>
+                        <a data-anchor href="#hero" class="step-card__button button">Bewertung des Objekts</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li data-fold class="steps__tab">
+                <div data-fold-btn class="steps__tab-button">
+                  <div class="steps__tab-icon">
+                    <img width="48" height="48" data-lozad src="images/placeholder.png" data-src="images/blocks/steps/03.svg" alt="Icon" title="Icon" />
+                  </div>
+                  <div class="steps__tab-name">Beschaffung von fehlenden Unterlagen</div>
+                  <div class="steps__tab-plus"></div>
+                </div>
+                <div data-fold-content class="steps__tab-wrapper">
+                  <div class="steps__tab-content step-card">
+                    <div class="step-card__image">
+                      <picture data-lozad>
+                        <source srcset="images/blocks/steps/image@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                        <source srcset="images/blocks/steps/image.webp" type="image/webp" />
+                        <source srcset="images/blocks/steps/image@2x.png" media="(min-resolution: 2dppx)" />
+                        <source srcset="images/blocks/steps/image.png" />
+                        <img src="images/placeholder.png" alt="Image" title="Image" />
+                      </picture>
+                    </div>
+                    <div class="step-card__content">
+                      <h3 class="step-card__title">Beschaffung von fehlenden Unterlagen</h3>
+                      <div class="step-card__text">
+                        <p>
+                          Unsere Experten nehmen eine Bewertung Ihrer Immobilie vor, um den aktuellen Marktwert zu ermitteln. Dieser Service ist
+                          für Sie kostenlos, unverbindlich und zeitsparend.
+                        </p>
+                      </div>
+                      <div class="step-card__buttons">
+                        <button type="button" data-popup-btn="feedback" class="step-card__button button button--black">Jetzt kontaktieren</button>
+                        <a data-anchor href="#hero" class="step-card__button button">Bewertung des Objekts</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li data-fold class="steps__tab">
+                <div data-fold-btn class="steps__tab-button">
+                  <div class="steps__tab-icon">
+                    <img width="48" height="48" data-lozad src="images/placeholder.png" data-src="images/blocks/steps/04.svg" alt="Icon" title="Icon" />
+                  </div>
+                  <div class="steps__tab-name">Aufbereiten der Grundrisse</div>
+                  <div class="steps__tab-plus"></div>
+                </div>
+                <div data-fold-content class="steps__tab-wrapper">
+                  <div class="steps__tab-content step-card">
+                    <div class="step-card__image">
+                      <picture data-lozad>
+                        <source srcset="images/blocks/steps/image@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                        <source srcset="images/blocks/steps/image.webp" type="image/webp" />
+                        <source srcset="images/blocks/steps/image@2x.png" media="(min-resolution: 2dppx)" />
+                        <source srcset="images/blocks/steps/image.png" />
+                        <img src="images/placeholder.png" alt="Image" title="Image" />
+                      </picture>
+                    </div>
+                    <div class="step-card__content">
+                      <h3 class="step-card__title">Aufbereiten der Grundrisse</h3>
+                      <div class="step-card__text">
+                        <p>
+                          Unsere Experten nehmen eine Bewertung Ihrer Immobilie vor, um den aktuellen Marktwert zu ermitteln. Dieser Service ist
+                          für Sie kostenlos, unverbindlich und zeitsparend.
+                        </p>
+                      </div>
+                      <div class="step-card__buttons">
+                        <button type="button" data-popup-btn="feedback" class="step-card__button button button--black">Jetzt kontaktieren</button>
+                        <a data-anchor href="#hero" class="step-card__button button">Bewertung des Objekts</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li data-fold class="steps__tab">
+                <div data-fold-btn class="steps__tab-button">
+                  <div class="steps__tab-icon">
+                    <img width="48" height="48" data-lozad src="images/placeholder.png" data-src="images/blocks/steps/05.svg" alt="Icon" title="Icon" />
+                  </div>
+                  <div class="steps__tab-name">Virtueller Rundgang</div>
+                  <div class="steps__tab-plus"></div>
+                </div>
+                <div data-fold-content class="steps__tab-wrapper">
+                  <div class="steps__tab-content step-card">
+                    <div class="step-card__image">
+                      <picture data-lozad>
+                        <source srcset="images/blocks/steps/image@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                        <source srcset="images/blocks/steps/image.webp" type="image/webp" />
+                        <source srcset="images/blocks/steps/image@2x.png" media="(min-resolution: 2dppx)" />
+                        <source srcset="images/blocks/steps/image.png" />
+                        <img src="images/placeholder.png" alt="Image" title="Image" />
+                      </picture>
+                    </div>
+                    <div class="step-card__content">
+                      <h3 class="step-card__title">Virtueller Rundgang</h3>
+                      <div class="step-card__text">
+                        <p>
+                          Unsere Experten nehmen eine Bewertung Ihrer Immobilie vor, um den aktuellen Marktwert zu ermitteln. Dieser Service ist
+                          für Sie kostenlos, unverbindlich und zeitsparend.
+                        </p>
+                      </div>
+                      <div class="step-card__buttons">
+                        <button type="button" data-popup-btn="feedback" class="step-card__button button button--black">Jetzt kontaktieren</button>
+                        <a data-anchor href="#hero" class="step-card__button button">Bewertung des Objekts</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li data-fold class="steps__tab">
+                <div data-fold-btn class="steps__tab-button">
+                  <div class="steps__tab-icon">
+                    <img width="48" height="48" data-lozad src="images/placeholder.png" data-src="images/blocks/steps/06.svg" alt="Icon" title="Icon" />
+                  </div>
+                  <div class="steps__tab-name">virtuelle Entrümpelung, Innenvisualisierung</div>
+                  <div class="steps__tab-plus"></div>
+                </div>
+                <div data-fold-content class="steps__tab-wrapper">
+                  <div class="steps__tab-content step-card">
+                    <div class="step-card__image">
+                      <picture data-lozad>
+                        <source srcset="images/blocks/steps/image@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                        <source srcset="images/blocks/steps/image.webp" type="image/webp" />
+                        <source srcset="images/blocks/steps/image@2x.png" media="(min-resolution: 2dppx)" />
+                        <source srcset="images/blocks/steps/image.png" />
+                        <img src="images/placeholder.png" alt="Image" title="Image" />
+                      </picture>
+                    </div>
+                    <div class="step-card__content">
+                      <h3 class="step-card__title">virtuelle Entrümpelung, Innenvisualisierung</h3>
+                      <div class="step-card__text">
+                        <p>
+                          Unsere Experten nehmen eine Bewertung Ihrer Immobilie vor, um den aktuellen Marktwert zu ermitteln. Dieser Service ist
+                          für Sie kostenlos, unverbindlich und zeitsparend.
+                        </p>
+                      </div>
+                      <div class="step-card__buttons">
+                        <button type="button" data-popup-btn="feedback" class="step-card__button button button--black">Jetzt kontaktieren</button>
+                        <a data-anchor href="#hero" class="step-card__button button">Bewertung des Objekts</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li data-fold class="steps__tab">
+                <div data-fold-btn class="steps__tab-button">
+                  <div class="steps__tab-icon">
+                    <img width="48" height="48" data-lozad src="images/placeholder.png" data-src="images/blocks/steps/07.svg" alt="Icon" title="Icon" />
+                  </div>
+                  <div class="steps__tab-name">Hochwertiges Exposé</div>
+                  <div class="steps__tab-plus"></div>
+                </div>
+                <div data-fold-content class="steps__tab-wrapper">
+                  <div class="steps__tab-content step-card">
+                    <div class="step-card__image">
+                      <picture data-lozad>
+                        <source srcset="images/blocks/steps/image@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                        <source srcset="images/blocks/steps/image.webp" type="image/webp" />
+                        <source srcset="images/blocks/steps/image@2x.png" media="(min-resolution: 2dppx)" />
+                        <source srcset="images/blocks/steps/image.png" />
+                        <img src="images/placeholder.png" alt="Image" title="Image" />
+                      </picture>
+                    </div>
+                    <div class="step-card__content">
+                      <h3 class="step-card__title">Hochwertiges Exposé</h3>
+                      <div class="step-card__text">
+                        <p>
+                          Unsere Experten nehmen eine Bewertung Ihrer Immobilie vor, um den aktuellen Marktwert zu ermitteln. Dieser Service ist
+                          für Sie kostenlos, unverbindlich und zeitsparend.
+                        </p>
+                      </div>
+                      <div class="step-card__buttons">
+                        <button type="button" data-popup-btn="feedback" class="step-card__button button button--black">Jetzt kontaktieren</button>
+                        <a data-anchor href="#hero" class="step-card__button button">Bewertung des Objekts</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li data-fold class="steps__tab">
+                <div data-fold-btn class="steps__tab-button">
+                  <div class="steps__tab-icon">
+                    <img width="48" height="48" data-lozad src="images/placeholder.png" data-src="images/blocks/steps/08.svg" alt="Icon" title="Icon" />
+                  </div>
+                  <div class="steps__tab-name">Präsentation auf allen relevanten Portalen</div>
+                  <div class="steps__tab-plus"></div>
+                </div>
+                <div data-fold-content class="steps__tab-wrapper">
+                  <div class="steps__tab-content step-card">
+                    <div class="step-card__image">
+                      <picture data-lozad>
+                        <source srcset="images/blocks/steps/image@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                        <source srcset="images/blocks/steps/image.webp" type="image/webp" />
+                        <source srcset="images/blocks/steps/image@2x.png" media="(min-resolution: 2dppx)" />
+                        <source srcset="images/blocks/steps/image.png" />
+                        <img src="images/placeholder.png" alt="Image" title="Image" />
+                      </picture>
+                    </div>
+                    <div class="step-card__content">
+                      <h3 class="step-card__title">Präsentation auf allen relevanten Portalen</h3>
+                      <div class="step-card__text">
+                        <p>
+                          Unsere Experten nehmen eine Bewertung Ihrer Immobilie vor, um den aktuellen Marktwert zu ermitteln. Dieser Service ist
+                          für Sie kostenlos, unverbindlich und zeitsparend.
+                        </p>
+                      </div>
+                      <div class="step-card__buttons">
+                        <button type="button" data-popup-btn="feedback" class="step-card__button button button--black">Jetzt kontaktieren</button>
+                        <a data-anchor href="#hero" class="step-card__button button">Bewertung des Objekts</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li data-fold class="steps__tab">
+                <div data-fold-btn class="steps__tab-button">
+                  <div class="steps__tab-icon">
+                    <img width="48" height="48" data-lozad src="images/placeholder.png" data-src="images/blocks/steps/09.svg" alt="Icon" title="Icon" />
+                  </div>
+                  <div class="steps__tab-name">Besichtigung, Verhandlungen und Bönitätsprügung</div>
+                  <div class="steps__tab-plus"></div>
+                </div>
+                <div data-fold-content class="steps__tab-wrapper">
+                  <div class="steps__tab-content step-card">
+                    <div class="step-card__image">
+                      <picture data-lozad>
+                        <source srcset="images/blocks/steps/image@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                        <source srcset="images/blocks/steps/image.webp" type="image/webp" />
+                        <source srcset="images/blocks/steps/image@2x.png" media="(min-resolution: 2dppx)" />
+                        <source srcset="images/blocks/steps/image.png" />
+                        <img src="images/placeholder.png" alt="Image" title="Image" />
+                      </picture>
+                    </div>
+                    <div class="step-card__content">
+                      <h3 class="step-card__title">Besichtigung, Verhandlungen und Bönitätsprügung</h3>
+                      <div class="step-card__text">
+                        <p>
+                          Unsere Experten nehmen eine Bewertung Ihrer Immobilie vor, um den aktuellen Marktwert zu ermitteln. Dieser Service ist
+                          für Sie kostenlos, unverbindlich und zeitsparend.
+                        </p>
+                      </div>
+                      <div class="step-card__buttons">
+                        <button type="button" data-popup-btn="feedback" class="step-card__button button button--black">Jetzt kontaktieren</button>
+                        <a data-anchor href="#hero" class="step-card__button button">Bewertung des Objekts</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li data-fold class="steps__tab">
+                <div data-fold-btn class="steps__tab-button">
+                  <div class="steps__tab-icon">
+                    <img width="48" height="48" data-lozad src="images/placeholder.png" data-src="images/blocks/steps/10.svg" alt="Icon" title="Icon" />
+                  </div>
+                  <div class="steps__tab-name">Verkauf</div>
+                  <div class="steps__tab-plus"></div>
+                </div>
+                <div data-fold-content class="steps__tab-wrapper">
+                  <div class="steps__tab-content step-card">
+                    <div class="step-card__image">
+                      <picture data-lozad>
+                        <source srcset="images/blocks/steps/image@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                        <source srcset="images/blocks/steps/image.webp" type="image/webp" />
+                        <source srcset="images/blocks/steps/image@2x.png" media="(min-resolution: 2dppx)" />
+                        <source srcset="images/blocks/steps/image.png" />
+                        <img src="images/placeholder.png" alt="Image" title="Image" />
+                      </picture>
+                    </div>
+                    <div class="step-card__content">
+                      <h3 class="step-card__title">Verkauf</h3>
+                      <div class="step-card__text">
+                        <p>
+                          Unsere Experten nehmen eine Bewertung Ihrer Immobilie vor, um den aktuellen Marktwert zu ermitteln. Dieser Service ist
+                          für Sie kostenlos, unverbindlich und zeitsparend.
+                        </p>
+                      </div>
+                      <div class="step-card__buttons">
+                        <button type="button" data-popup-btn="feedback" class="step-card__button button button--black">Jetzt kontaktieren</button>
+                        <a data-anchor href="#hero" class="step-card__button button">Bewertung des Objekts</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="steps__item step-card is-active">
+              <div class="step-card__image">
+                <picture data-lozad>
+                  <source srcset="images/blocks/steps/image@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                  <source srcset="images/blocks/steps/image.webp" type="image/webp" />
+                  <source srcset="images/blocks/steps/image@2x.png" media="(min-resolution: 2dppx)" />
+                  <source srcset="images/blocks/steps/image.png" />
+                  <img src="images/placeholder.png" alt="Image" title="Image" />
+                </picture>
+              </div>
+              <div class="step-card__content">
+                <h3 class="step-card__title">Verkaufspreis</h3>
+                <div class="step-card__text">
+                  <p>
+                    Unsere Experten nehmen eine Bewertung Ihrer Immobilie vor, um den aktuellen Marktwert zu ermitteln. Dieser Service ist für Sie
+                    kostenlos, unverbindlich und zeitsparend.
+                  </p>
+                </div>
+                <div class="step-card__buttons">
+                  <button type="button" data-popup-btn="feedback" class="step-card__button button button--black">Jetzt kontaktieren</button>
+                  <a data-anchor href="#hero" class="step-card__button button">Bewertung des Objekts</a>
                 </div>
               </div>
             </div>
-            <p class="project-page__subtitle">Список страниц сайта</p>
-            <h2 class="project-page__title">Wimmer</h2>
-            <div class="project-page__table project-table">
-              <div class="project-table__row project-table__row--header">
-                <div class="project-table__cell project-table__cell--number project-table__cell--head">№</div>
-                <div class="project-table__cell project-table__cell--head">Страница</div>
-                <div class="project-table__cell project-table__cell--head">Ссылка</div>
+            <div class="steps__item step-card">
+              <div class="step-card__image">
+                <picture data-lozad>
+                  <source srcset="images/blocks/steps/image@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                  <source srcset="images/blocks/steps/image.webp" type="image/webp" />
+                  <source srcset="images/blocks/steps/image@2x.png" media="(min-resolution: 2dppx)" />
+                  <source srcset="images/blocks/steps/image.png" />
+                  <img src="images/placeholder.png" alt="Image" title="Image" />
+                </picture>
+              </div>
+              <div class="step-card__content">
+                <h3 class="step-card__title">Profesionelle Fotos</h3>
+                <div class="step-card__text">
+                  <p>
+                    Unsere Experten nehmen eine Bewertung Ihrer Immobilie vor, um den aktuellen Marktwert zu ermitteln. Dieser Service ist für Sie
+                    kostenlos, unverbindlich und zeitsparend.
+                  </p>
+                </div>
+                <div class="step-card__buttons">
+                  <button type="button" data-popup-btn="feedback" class="step-card__button button button--black">Jetzt kontaktieren</button>
+                  <a data-anchor href="#hero" class="step-card__button button">Bewertung des Objekts</a>
+                </div>
               </div>
             </div>
-            <p class="project-page__author">
-              Full-stack development <a href="https://freelance.ru/batomunkuevv" target="_blank">batomunkuevv</a>
+            <div class="steps__item step-card">
+              <div class="step-card__image">
+                <picture data-lozad>
+                  <source srcset="images/blocks/steps/image@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                  <source srcset="images/blocks/steps/image.webp" type="image/webp" />
+                  <source srcset="images/blocks/steps/image@2x.png" media="(min-resolution: 2dppx)" />
+                  <source srcset="images/blocks/steps/image.png" />
+                  <img src="images/placeholder.png" alt="Image" title="Image" />
+                </picture>
+              </div>
+              <div class="step-card__content">
+                <h3 class="step-card__title">Beschaffung von fehlenden Unterlagen</h3>
+                <div class="step-card__text">
+                  <p>
+                    Unsere Experten nehmen eine Bewertung Ihrer Immobilie vor, um den aktuellen Marktwert zu ermitteln. Dieser Service ist für Sie
+                    kostenlos, unverbindlich und zeitsparend.
+                  </p>
+                </div>
+                <div class="step-card__buttons">
+                  <button type="button" data-popup-btn="feedback" class="step-card__button button button--black">Jetzt kontaktieren</button>
+                  <a data-anchor href="#hero" class="step-card__button button">Bewertung des Objekts</a>
+                </div>
+              </div>
+            </div>
+            <div class="steps__item step-card">
+              <div class="step-card__image">
+                <picture data-lozad>
+                  <source srcset="images/blocks/steps/image@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                  <source srcset="images/blocks/steps/image.webp" type="image/webp" />
+                  <source srcset="images/blocks/steps/image@2x.png" media="(min-resolution: 2dppx)" />
+                  <source srcset="images/blocks/steps/image.png" />
+                  <img src="images/placeholder.png" alt="Image" title="Image" />
+                </picture>
+              </div>
+              <div class="step-card__content">
+                <h3 class="step-card__title">Aufbereiten der Grundrisse</h3>
+                <div class="step-card__text">
+                  <p>
+                    Unsere Experten nehmen eine Bewertung Ihrer Immobilie vor, um den aktuellen Marktwert zu ermitteln. Dieser Service ist für Sie
+                    kostenlos, unverbindlich und zeitsparend.
+                  </p>
+                </div>
+                <div class="step-card__buttons">
+                  <button type="button" data-popup-btn="feedback" class="step-card__button button button--black">Jetzt kontaktieren</button>
+                  <a data-anchor href="#hero" class="step-card__button button">Bewertung des Objekts</a>
+                </div>
+              </div>
+            </div>
+            <div class="steps__item step-card">
+              <div class="step-card__image">
+                <picture data-lozad>
+                  <source srcset="images/blocks/steps/image@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                  <source srcset="images/blocks/steps/image.webp" type="image/webp" />
+                  <source srcset="images/blocks/steps/image@2x.png" media="(min-resolution: 2dppx)" />
+                  <source srcset="images/blocks/steps/image.png" />
+                  <img src="images/placeholder.png" alt="Image" title="Image" />
+                </picture>
+              </div>
+              <div class="step-card__content">
+                <h3 class="step-card__title">Virtueller Rundgang</h3>
+                <div class="step-card__text">
+                  <p>
+                    Unsere Experten nehmen eine Bewertung Ihrer Immobilie vor, um den aktuellen Marktwert zu ermitteln. Dieser Service ist für Sie
+                    kostenlos, unverbindlich und zeitsparend.
+                  </p>
+                </div>
+                <div class="step-card__buttons">
+                  <button type="button" data-popup-btn="feedback" class="step-card__button button button--black">Jetzt kontaktieren</button>
+                  <a data-anchor href="#hero" class="step-card__button button">Bewertung des Objekts</a>
+                </div>
+              </div>
+            </div>
+            <div class="steps__item step-card">
+              <div class="step-card__image">
+                <picture data-lozad>
+                  <source srcset="images/blocks/steps/image@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                  <source srcset="images/blocks/steps/image.webp" type="image/webp" />
+                  <source srcset="images/blocks/steps/image@2x.png" media="(min-resolution: 2dppx)" />
+                  <source srcset="images/blocks/steps/image.png" />
+                  <img src="images/placeholder.png" alt="Image" title="Image" />
+                </picture>
+              </div>
+              <div class="step-card__content">
+                <h3 class="step-card__title">virtuelle Entrümpelung, Innenvisualisierung</h3>
+                <div class="step-card__text">
+                  <p>
+                    Unsere Experten nehmen eine Bewertung Ihrer Immobilie vor, um den aktuellen Marktwert zu ermitteln. Dieser Service ist für Sie
+                    kostenlos, unverbindlich und zeitsparend.
+                  </p>
+                </div>
+                <div class="step-card__buttons">
+                  <button type="button" data-popup-btn="feedback" class="step-card__button button button--black">Jetzt kontaktieren</button>
+                  <a data-anchor href="#hero" class="step-card__button button">Bewertung des Objekts</a>
+                </div>
+              </div>
+            </div>
+            <div class="steps__item step-card">
+              <div class="step-card__image">
+                <picture data-lozad>
+                  <source srcset="images/blocks/steps/image@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                  <source srcset="images/blocks/steps/image.webp" type="image/webp" />
+                  <source srcset="images/blocks/steps/image@2x.png" media="(min-resolution: 2dppx)" />
+                  <source srcset="images/blocks/steps/image.png" />
+                  <img src="images/placeholder.png" alt="Image" title="Image" />
+                </picture>
+              </div>
+              <div class="step-card__content">
+                <h3 class="step-card__title">Hochwertiges Exposé</h3>
+                <div class="step-card__text">
+                  <p>
+                    Unsere Experten nehmen eine Bewertung Ihrer Immobilie vor, um den aktuellen Marktwert zu ermitteln. Dieser Service ist für Sie
+                    kostenlos, unverbindlich und zeitsparend.
+                  </p>
+                </div>
+                <div class="step-card__buttons">
+                  <button type="button" data-popup-btn="feedback" class="step-card__button button button--black">Jetzt kontaktieren</button>
+                  <a data-anchor href="#hero" class="step-card__button button">Bewertung des Objekts</a>
+                </div>
+              </div>
+            </div>
+            <div class="steps__item step-card">
+              <div class="step-card__image">
+                <picture data-lozad>
+                  <source srcset="images/blocks/steps/image@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                  <source srcset="images/blocks/steps/image.webp" type="image/webp" />
+                  <source srcset="images/blocks/steps/image@2x.png" media="(min-resolution: 2dppx)" />
+                  <source srcset="images/blocks/steps/image.png" />
+                  <img src="images/placeholder.png" alt="Image" title="Image" />
+                </picture>
+              </div>
+              <div class="step-card__content">
+                <h3 class="step-card__title">Präsentation auf allen relevanten Portalen</h3>
+                <div class="step-card__text">
+                  <p>
+                    Unsere Experten nehmen eine Bewertung Ihrer Immobilie vor, um den aktuellen Marktwert zu ermitteln. Dieser Service ist für Sie
+                    kostenlos, unverbindlich und zeitsparend.
+                  </p>
+                </div>
+                <div class="step-card__buttons">
+                  <button type="button" data-popup-btn="feedback" class="step-card__button button button--black">Jetzt kontaktieren</button>
+                  <a data-anchor href="#hero" class="step-card__button button">Bewertung des Objekts</a>
+                </div>
+              </div>
+            </div>
+            <div class="steps__item step-card">
+              <div class="step-card__image">
+                <picture data-lozad>
+                  <source srcset="images/blocks/steps/image@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                  <source srcset="images/blocks/steps/image.webp" type="image/webp" />
+                  <source srcset="images/blocks/steps/image@2x.png" media="(min-resolution: 2dppx)" />
+                  <source srcset="images/blocks/steps/image.png" />
+                  <img src="images/placeholder.png" alt="Image" title="Image" />
+                </picture>
+              </div>
+              <div class="step-card__content">
+                <h3 class="step-card__title">Besichtigung, Verhandlungen und Bönitätsprügung</h3>
+                <div class="step-card__text">
+                  <p>
+                    Unsere Experten nehmen eine Bewertung Ihrer Immobilie vor, um den aktuellen Marktwert zu ermitteln. Dieser Service ist für Sie
+                    kostenlos, unverbindlich und zeitsparend.
+                  </p>
+                </div>
+                <div class="step-card__buttons">
+                  <button type="button" data-popup-btn="feedback" class="step-card__button button button--black">Jetzt kontaktieren</button>
+                  <a data-anchor href="#hero" class="step-card__button button">Bewertung des Objekts</a>
+                </div>
+              </div>
+            </div>
+            <div class="steps__item step-card">
+              <div class="step-card__image">
+                <picture data-lozad>
+                  <source srcset="images/blocks/steps/image@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                  <source srcset="images/blocks/steps/image.webp" type="image/webp" />
+                  <source srcset="images/blocks/steps/image@2x.png" media="(min-resolution: 2dppx)" />
+                  <source srcset="images/blocks/steps/image.png" />
+                  <img src="images/placeholder.png" alt="Image" title="Image" />
+                </picture>
+              </div>
+              <div class="step-card__content">
+                <h3 class="step-card__title">Verkauf</h3>
+                <div class="step-card__text">
+                  <p>
+                    Unsere Experten nehmen eine Bewertung Ihrer Immobilie vor, um den aktuellen Marktwert zu ermitteln. Dieser Service ist für Sie
+                    kostenlos, unverbindlich und zeitsparend.
+                  </p>
+                </div>
+                <div class="step-card__buttons">
+                  <button type="button" data-popup-btn="feedback" class="step-card__button button button--black">Jetzt kontaktieren</button>
+                  <a data-anchor href="#hero" class="step-card__button button">Bewertung des Objekts</a>
+                </div>
+              </div>
+            </div>
+            <div class="steps__navigation">
+              <button disabled class="steps__arrow steps__arrow--prev">
+                <svg width="21" height="38" viewBox="0 0 21 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.9998 37.1998L0.299805 35.4998L16.7998 18.9998L0.299805 2.4998L1.9998 0.799805L20.1998 18.9998L1.9998 37.1998Z" fill="currentColor" />
+                </svg>
+              </button>
+              <p class="steps__fraction">
+                <span class="steps__current-item">1</span> on 10
+              </p>
+              <button class="steps__arrow steps__arrow--next">
+                <svg width="21" height="38" viewBox="0 0 21 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.9998 37.1998L0.299805 35.4998L16.7998 18.9998L0.299805 2.4998L1.9998 0.799805L20.1998 18.9998L1.9998 37.1998Z" fill="currentColor" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <header class="section__header">
+            <p class="section__subtitle">Virtuelle Touren</p>
+            <h2 class="section__title">So könnte es bei dir aussehen</h2>
+            <p class="section__text">
+              Für den maximalen Vermarktungserfolg sind virtuelle 360° Besichtigungen heutzutage nicht mehr wegzudenken. Noch bevor es zu Immobilientourismus
+              kommt, hat dein Interessent die Möglichkeit sich dein Objekt virtuell anzuschauen.
             </p>
-            <ul class="project-page__socials">
-              <li class="project-page__socials-item">
-                <a href="https://github.com/Batomunkuevv" target="_blank" class="project-page__socials-link">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22.3901 6.27324C21.3171 4.43567 19.8615 2.98086 18.0231 1.90849C16.1844 0.836064 14.1771 0.299988 11.9998 0.299988C9.82276 0.299988 7.81481 0.836228 5.97651 1.90849C4.13794 2.98081 2.68245 4.43567 1.60938 6.27324C0.536478 8.11075 0 10.1173 0 12.2929C0 14.9063 0.762879 17.2563 2.28902 19.3436C3.815 21.431 5.78634 22.8754 8.20287 23.677C8.48416 23.7292 8.69239 23.6925 8.82778 23.5678C8.96323 23.443 9.03087 23.2867 9.03087 23.0995C9.03087 23.0683 9.02819 22.7873 9.02299 22.2563C9.01763 21.7252 9.01511 21.2619 9.01511 20.8666L8.65573 20.9288C8.42659 20.9707 8.13753 20.9885 7.78854 20.9835C7.43972 20.9786 7.07759 20.9421 6.70267 20.8741C6.32758 20.8068 5.9787 20.6507 5.65576 20.406C5.33299 20.1613 5.10385 19.8411 4.9684 19.4458L4.81216 19.0864C4.70802 18.8472 4.54406 18.5814 4.32006 18.2901C4.09607 17.9985 3.86956 17.8008 3.64042 17.6967L3.53103 17.6185C3.45813 17.5665 3.39049 17.5037 3.32794 17.4309C3.26544 17.3581 3.21865 17.2853 3.1874 17.2123C3.1561 17.1393 3.18204 17.0794 3.2655 17.0324C3.34895 16.9854 3.49978 16.9626 3.71863 16.9626L4.031 17.0093C4.23934 17.051 4.49705 17.1756 4.80444 17.384C5.11167 17.5922 5.36423 17.8628 5.56218 18.1958C5.80188 18.6227 6.09067 18.9481 6.42937 19.1719C6.76779 19.3958 7.10901 19.5076 7.45269 19.5076C7.79636 19.5076 8.0932 19.4815 8.3433 19.4297C8.59312 19.3777 8.82751 19.2994 9.04636 19.1954C9.1401 18.4975 9.39535 17.9615 9.81187 17.5867C9.2182 17.5244 8.68446 17.4305 8.21037 17.3056C7.73655 17.1806 7.24692 16.9776 6.7418 16.6963C6.2364 16.4153 5.81715 16.0664 5.48392 15.6502C5.15064 15.2337 4.87712 14.687 4.66374 14.0104C4.45026 13.3336 4.34349 12.5529 4.34349 11.668C4.34349 10.4081 4.75503 9.33595 5.57794 8.45096C5.19245 7.50374 5.22884 6.44187 5.68723 5.26546C5.98931 5.17166 6.4373 5.24205 7.03097 5.47621C7.62474 5.71047 8.05949 5.91115 8.33563 6.07754C8.61178 6.24387 8.83304 6.38482 8.99973 6.49913C9.96866 6.22855 10.9686 6.09323 11.9997 6.09323C13.0308 6.09323 14.031 6.22855 14.9999 6.49913L15.5937 6.12452C15.9997 5.87456 16.4791 5.64549 17.0309 5.43726C17.5829 5.22915 18.0051 5.17182 18.2969 5.26563C18.7655 6.44209 18.8072 7.5039 18.4216 8.45113C19.2445 9.33611 19.6562 10.4085 19.6562 11.6682C19.6562 12.5531 19.549 13.3363 19.3359 14.0183C19.1224 14.7004 18.8466 15.2466 18.5081 15.658C18.1693 16.0694 17.7474 16.4155 17.2423 16.6965C16.737 16.9776 16.2473 17.1805 15.7734 17.3056C15.2994 17.4306 14.7657 17.5246 14.172 17.587C14.7134 18.0553 14.9842 18.7945 14.9842 19.8043V23.0991C14.9842 23.2862 15.0494 23.4425 15.1797 23.5674C15.3099 23.692 15.5155 23.7287 15.7968 23.6765C18.2137 22.875 20.185 21.4306 21.7109 19.3431C23.2367 17.2559 23.9998 14.9059 23.9998 12.2925C23.9993 10.1172 23.4625 8.11075 22.3901 6.27324Z" fill="currentColor" />
+          </header>
+          <ul class="virtual-tours">
+            <li class="virtual-tours__item">
+              <picture data-lozad>
+                <source srcset="images/blocks/virtual-tours/01@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                <source srcset="images/blocks/virtual-tours/01.webp" type="image/webp" />
+                <source srcset="images/blocks/virtual-tours/01@2x.png" media="(min-resolution: 2dppx)" />
+                <source srcset="images/blocks/virtual-tours/01.png" />
+                <img src="images/placeholder.png" alt="Image" title="Image" />
+              </picture>
+            </li>
+            <li class="virtual-tours__item">
+              <picture data-lozad>
+                <source srcset="images/blocks/virtual-tours/02@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                <source srcset="images/blocks/virtual-tours/02.webp" type="image/webp" />
+                <source srcset="images/blocks/virtual-tours/02@2x.png" media="(min-resolution: 2dppx)" />
+                <source srcset="images/blocks/virtual-tours/02.png" />
+                <img src="images/placeholder.png" alt="Image" title="Image" />
+              </picture>
+            </li>
+            <li class="virtual-tours__item">
+              <picture data-lozad>
+                <source srcset="images/blocks/virtual-tours/03@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                <source srcset="images/blocks/virtual-tours/03.webp" type="image/webp" />
+                <source srcset="images/blocks/virtual-tours/03@2x.png" media="(min-resolution: 2dppx)" />
+                <source srcset="images/blocks/virtual-tours/03.png" />
+                <img src="images/placeholder.png" alt="Image" title="Image" />
+              </picture>
+            </li>
+            <li class="virtual-tours__item">
+              <picture data-lozad>
+                <source srcset="images/blocks/virtual-tours/04@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                <source srcset="images/blocks/virtual-tours/04.webp" type="image/webp" />
+                <source srcset="images/blocks/virtual-tours/04@2x.png" media="(min-resolution: 2dppx)" />
+                <source srcset="images/blocks/virtual-tours/04.png" />
+                <img src="images/placeholder.png" alt="Image" title="Image" />
+              </picture>
+            </li>
+            <li class="virtual-tours__item">
+              <video class="video__element" controls data-lozad data-poster="images/blocks/virtual-tours/poster.png">
+                <source data-src="https://assets.mixkit.co/videos/52311/52311-720.mp4" type="video/mp4" />
+              </video>
+            </li>
+            <li class="virtual-tours__item">
+              <picture data-lozad>
+                <source srcset="images/blocks/virtual-tours/05@2x.webp" type="image/webp" media="(min-resolution: 2dppx)" />
+                <source srcset="images/blocks/virtual-tours/05.webp" type="image/webp" />
+                <source srcset="images/blocks/virtual-tours/05@2x.png" media="(min-resolution: 2dppx)" />
+                <source srcset="images/blocks/virtual-tours/05.png" />
+                <img src="images/placeholder.png" alt="Image" title="Image" />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <header class="section__header">
+            <p class="section__subtitle">Unsere aktuellen Angebote</p>
+            <h2 class="section__title">Immobilie kaufen in Deutschland</h2>
+            <p class="section__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit
+            </p>
+          </header>
+          <div class="objects-slider">
+            <div data-slider="objects" class="objects-slider__body swiper">
+              <div class="objects-slider__wrapper swiper-wrapper">
+                <div class="objects-slider__slide swiper-slide">
+                  <article class="object-card">
+                    <div class="object-card__images swiper">
+                      <div class="object-card__images-wrapper swiper-wrapper">
+                        <div class="object-card__images-item swiper-slide">
+                          <picture>
+                            <source srcset="images/objects/01@2x.webp" type="image/webp" media="(min-resolution: 2dpxx)" />
+                            <source srcset="images/objects/01.webp" type="image/webp" />
+                            <source srcset="images/objects/01@2x.png" media="(min-resolution: 2dpxx)" />
+                            <img src="images/objects/01.png" alt="Image" title="Image" />
+                          </picture>
+                        </div>
+                      </div>
+                      <button type="button" class="object-card__images-arrow object-card__images-arrow--prev">
+                        <svg width="21" height="38" viewBox="0 0 21 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.9998 37.1998L0.299805 35.4998L16.7998 18.9998L0.299805 2.4998L1.9998 0.799805L20.1998 18.9998L1.9998 37.1998Z" fill="currentColor" />
+                        </svg>
+                      </button>
+                      <button type="button" class="object-card__images-arrow object-card__images-arrow--next">
+                        <svg width="21" height="38" viewBox="0 0 21 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.9998 37.1998L0.299805 35.4998L16.7998 18.9998L0.299805 2.4998L1.9998 0.799805L20.1998 18.9998L1.9998 37.1998Z" fill="currentColor" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="object-card__body">
+                      <div class="object-card__place">Bremen / Oberneuland</div>
+                      <h3 class="object-card__text">
+                        <a href="#">Wohnträume werden wahr: Exklusives Grundstück und moderner Neubau in Top-Lage Bremens!</a>
+                      </h3>
+                      <div class="object-card__price">€ 999.000</div>
+                      <ul class="object-card__characteristics">
+                        <li class="object-card__characteristic">
+                          <span class="object-card__characteristic-icon">
+                            <img width="24" height="24" src="images/icons/characteristic.svg" alt="Icon" title="Icon" />
+                          </span>
+                          <span class="object-card__characteristic-text">185 m²</span>
+                        </li>
+                        <li class="object-card__characteristic">
+                          <span class="object-card__characteristic-icon">
+                            <img width="24" height="24" src="images/icons/characteristic.svg" alt="Icon" title="Icon" />
+                          </span>
+                          <span class="object-card__characteristic-text">1.017 m²</span>
+                        </li>
+                        <li class="object-card__characteristic">
+                          <span class="object-card__characteristic-icon">
+                            <img width="24" height="24" src="images/icons/characteristic.svg" alt="Icon" title="Icon" />
+                          </span>
+                          <span class="object-card__characteristic-text">5</span>
+                        </li>
+                      </ul>
+                      <a href="#" class="object-card__button button">Mehr lesen</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="objects-slider__slide swiper-slide">
+                  <article class="object-card">
+                    <div class="object-card__images swiper">
+                      <div class="object-card__images-wrapper swiper-wrapper">
+                        <div class="object-card__images-item swiper-slide">
+                          <picture>
+                            <source srcset="images/objects/02@2x.webp" type="image/webp" media="(min-resolution: 2dpxx)" />
+                            <source srcset="images/objects/02.webp" type="image/webp" />
+                            <source srcset="images/objects/02@2x.png" media="(min-resolution: 2dpxx)" />
+                            <img src="images/objects/02.png" alt="Image" title="Image" />
+                          </picture>
+                        </div>
+                      </div>
+                      <button type="button" class="object-card__images-arrow object-card__images-arrow--prev">
+                        <svg width="21" height="38" viewBox="0 0 21 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.9998 37.1998L0.299805 35.4998L16.7998 18.9998L0.299805 2.4998L1.9998 0.799805L20.1998 18.9998L1.9998 37.1998Z" fill="currentColor" />
+                        </svg>
+                      </button>
+                      <button type="button" class="object-card__images-arrow object-card__images-arrow--next">
+                        <svg width="21" height="38" viewBox="0 0 21 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.9998 37.1998L0.299805 35.4998L16.7998 18.9998L0.299805 2.4998L1.9998 0.799805L20.1998 18.9998L1.9998 37.1998Z" fill="currentColor" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="object-card__body">
+                      <div class="object-card__place">Bremen / Oberneuland</div>
+                      <h3 class="object-card__text">
+                        <a href="#">Wohnträume werden wahr: Exklusives Grundstück und moderner Neubau in Top-Lage Bremens!</a>
+                      </h3>
+                      <div class="object-card__price">€ 999.000</div>
+                      <ul class="object-card__characteristics">
+                        <li class="object-card__characteristic">
+                          <span class="object-card__characteristic-icon">
+                            <img width="24" height="24" src="images/icons/characteristic.svg" alt="Icon" title="Icon" />
+                          </span>
+                          <span class="object-card__characteristic-text">185 m²</span>
+                        </li>
+                        <li class="object-card__characteristic">
+                          <span class="object-card__characteristic-icon">
+                            <img width="24" height="24" src="images/icons/characteristic.svg" alt="Icon" title="Icon" />
+                          </span>
+                          <span class="object-card__characteristic-text">1.017 m²</span>
+                        </li>
+                        <li class="object-card__characteristic">
+                          <span class="object-card__characteristic-icon">
+                            <img width="24" height="24" src="images/icons/characteristic.svg" alt="Icon" title="Icon" />
+                          </span>
+                          <span class="object-card__characteristic-text">5</span>
+                        </li>
+                      </ul>
+                      <a href="#" class="object-card__button button">Mehr lesen</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="objects-slider__slide swiper-slide">
+                  <article class="object-card">
+                    <div class="object-card__images swiper">
+                      <div class="object-card__images-wrapper swiper-wrapper">
+                        <div class="object-card__images-item swiper-slide">
+                          <picture>
+                            <source srcset="images/objects/03@2x.webp" type="image/webp" media="(min-resolution: 2dpxx)" />
+                            <source srcset="images/objects/03.webp" type="image/webp" />
+                            <source srcset="images/objects/03@2x.png" media="(min-resolution: 2dpxx)" />
+                            <img src="images/objects/03.png" alt="Image" title="Image" />
+                          </picture>
+                        </div>
+                      </div>
+                      <button type="button" class="object-card__images-arrow object-card__images-arrow--prev">
+                        <svg width="21" height="38" viewBox="0 0 21 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.9998 37.1998L0.299805 35.4998L16.7998 18.9998L0.299805 2.4998L1.9998 0.799805L20.1998 18.9998L1.9998 37.1998Z" fill="currentColor" />
+                        </svg>
+                      </button>
+                      <button type="button" class="object-card__images-arrow object-card__images-arrow--next">
+                        <svg width="21" height="38" viewBox="0 0 21 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.9998 37.1998L0.299805 35.4998L16.7998 18.9998L0.299805 2.4998L1.9998 0.799805L20.1998 18.9998L1.9998 37.1998Z" fill="currentColor" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="object-card__body">
+                      <div class="object-card__place">Bremen / Oberneuland</div>
+                      <h3 class="object-card__text">
+                        <a href="#">Wohnträume werden wahr: Exklusives Grundstück und moderner Neubau in Top-Lage Bremens!</a>
+                      </h3>
+                      <div class="object-card__price">€ 999.000</div>
+                      <ul class="object-card__characteristics">
+                        <li class="object-card__characteristic">
+                          <span class="object-card__characteristic-icon">
+                            <img width="24" height="24" src="images/icons/characteristic.svg" alt="Icon" title="Icon" />
+                          </span>
+                          <span class="object-card__characteristic-text">185 m²</span>
+                        </li>
+                        <li class="object-card__characteristic">
+                          <span class="object-card__characteristic-icon">
+                            <img width="24" height="24" src="images/icons/characteristic.svg" alt="Icon" title="Icon" />
+                          </span>
+                          <span class="object-card__characteristic-text">1.017 m²</span>
+                        </li>
+                        <li class="object-card__characteristic">
+                          <span class="object-card__characteristic-icon">
+                            <img width="24" height="24" src="images/icons/characteristic.svg" alt="Icon" title="Icon" />
+                          </span>
+                          <span class="object-card__characteristic-text">5</span>
+                        </li>
+                      </ul>
+                      <a href="#" class="object-card__button button">Mehr lesen</a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="objects-slider__arrows">
+              <button class="objects-slider__arrow objects-slider__arrow--prev">
+                <svg width="21" height="38" viewBox="0 0 21 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.9998 37.1998L0.299805 35.4998L16.7998 18.9998L0.299805 2.4998L1.9998 0.799805L20.1998 18.9998L1.9998 37.1998Z" fill="currentColor" />
+                </svg>
+              </button>
+              <button class="objects-slider__arrow objects-slider__arrow--next">
+                <svg width="21" height="38" viewBox="0 0 21 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.9998 37.1998L0.299805 35.4998L16.7998 18.9998L0.299805 2.4998L1.9998 0.799805L20.1998 18.9998L1.9998 37.1998Z" fill="currentColor" />
+                </svg>
+              </button>
+            </div>
+            <a href="/properties.html" class="objects-slider__button button">Zum Immobilienkatalog gehen</a>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <header class="section__header">
+            <p class="section__subtitle">Wir sind in sozialen Netzwerken</p>
+            <h2 class="section__title">Abonnieren Sie unsere sozialen Medienkanäle</h2>
+            <p class="section__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit
+            </p>
+          </header>
+          <ul class="social-cards">
+            <li class="social-cards__card">
+              <div class="social-cards__card-image">
+                <img width="72" height="72" data-lozad src="images/placeholder.png" data-src="images/icons/socials/youtube.svg" alt="YouTube" title="YouTube" />
+              </div>
+              <h3 class="social-cards__card-title">Wir sind auf YouTube</h3>
+              <p class="social-cards__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa
+              </p>
+              <a href="#" target="_blank" class="social-cards__card-button button">Gehe zu</a>
+            </li>
+            <li class="social-cards__card">
+              <div class="social-cards__card-image">
+                <img width="72" height="72" data-lozad src="images/placeholder.png" data-src="images/icons/socials/facebook.svg" alt="Facebook" title="Facebook" />
+              </div>
+              <h3 class="social-cards__card-title">Wir sind auf Facebook</h3>
+              <p class="social-cards__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa
+              </p>
+              <a href="#" target="_blank" class="social-cards__card-button button">Gehe zu</a>
+            </li>
+            <li class="social-cards__card">
+              <div class="social-cards__card-image">
+                <img width="72" height="72" data-lozad src="images/placeholder.png" data-src="images/icons/socials/linkedin.svg" alt="Linkedin" title="Linkedine" />
+              </div>
+              <h3 class="social-cards__card-title">Wir sind auf Linkedin</h3>
+              <p class="social-cards__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa
+              </p>
+              <a href="#" target="_blank" class="social-cards__card-button button">Gehe zu</a>
+            </li>
+            <li class="social-cards__card">
+              <div class="social-cards__card-image">
+                <img width="72" height="72" data-lozad src="images/placeholder.png" data-src="images/icons/socials/instagram.svg" alt="Instagram" title="Instagram" />
+              </div>
+              <h3 class="social-cards__card-title">Wir sind auf instagram</h3>
+              <p class="social-cards__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa
+              </p>
+              <a href="#" target="_blank" class="social-cards__card-button button">Gehe zu</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section faqs">
+        <div class="container">
+          <header class="section__header">
+            <p class="section__subtitle">Alles ist klar und transparent</p>
+            <h2 class="section__title">häufig gestellte Fragen</h2>
+            <p class="section__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit
+            </p>
+          </header>
+          <ul data-accordion class="faqs__list" itemscope itemtype="https://schema.org/FAQPage">
+            <li data-fold class="faqs__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div data-fold-btn class="faqs__item-button">
+                <div class="faqs__item-plus"></div>
+                <h3 class="faqs__item-question">Beschreibender Titel der Frage</h3>
+              </div>
+              <div data-fold-content class="faqs__item-wrapper" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div class="faqs__item-answer" itemprop="text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit
+                  </p>
+                  <p>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li data-fold class="faqs__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div data-fold-btn class="faqs__item-button">
+                <div class="faqs__item-plus"></div>
+                <h3 class="faqs__item-question">Beschreibender Titel der Frage</h3>
+              </div>
+              <div data-fold-content class="faqs__item-wrapper" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div class="faqs__item-answer" itemprop="text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit
+                  </p>
+                  <p>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li data-fold class="faqs__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div data-fold-btn class="faqs__item-button">
+                <div class="faqs__item-plus"></div>
+                <h3 class="faqs__item-question">Beschreibender Titel der Frage</h3>
+              </div>
+              <div data-fold-content class="faqs__item-wrapper" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div class="faqs__item-answer" itemprop="text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit
+                  </p>
+                  <p>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li data-fold class="faqs__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div data-fold-btn class="faqs__item-button">
+                <div class="faqs__item-plus"></div>
+                <h3 class="faqs__item-question">Beschreibender Titel der Frage</h3>
+              </div>
+              <div data-fold-content class="faqs__item-wrapper" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div class="faqs__item-answer" itemprop="text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit
+                  </p>
+                  <p>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li data-fold class="faqs__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div data-fold-btn class="faqs__item-button">
+                <div class="faqs__item-plus"></div>
+                <h3 class="faqs__item-question">Beschreibender Titel der Frage</h3>
+              </div>
+              <div data-fold-content class="faqs__item-wrapper" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div class="faqs__item-answer" itemprop="text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit
+                  </p>
+                  <p>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li data-fold class="faqs__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div data-fold-btn class="faqs__item-button">
+                <div class="faqs__item-plus"></div>
+                <h3 class="faqs__item-question">Beschreibender Titel der Frage</h3>
+              </div>
+              <div data-fold-content class="faqs__item-wrapper" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div class="faqs__item-answer" itemprop="text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit
+                  </p>
+                  <p>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li data-fold class="faqs__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div data-fold-btn class="faqs__item-button">
+                <div class="faqs__item-plus"></div>
+                <h3 class="faqs__item-question">Beschreibender Titel der Frage</h3>
+              </div>
+              <div data-fold-content class="faqs__item-wrapper" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div class="faqs__item-answer" itemprop="text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit
+                  </p>
+                  <p>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <header class="section__header">
+            <p class="section__subtitle">Feedback zu unserer Arbeit</p>
+            <h2 class="section__title">Was unsere Kunden über uns&nbsp;sagen</h2>
+            <p class="section__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit
+            </p>
+          </header>
+          <div class="reviews">
+            <div data-slider="reviews" class="reviews__body swiper">
+              <div class="reviews__wrapper swiper-wrapper">
+                <div class="reviews__slide swiper-slide review">
+                  <video class="review__video" controls poster="images/homepage/reviews/02.png">
+                    <source src="https://assets.mixkit.co/videos/52311/52311-720.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="reviews__slide swiper-slide review">
+                  <video class="review__video" controls poster="images/homepage/reviews/01.png">
+                    <source src="https://assets.mixkit.co/videos/52311/52311-720.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="reviews__slide swiper-slide review">
+                  <video class="review__video" controls poster="images/homepage/reviews/03.png">
+                    <source src="https://assets.mixkit.co/videos/52311/52311-720.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__arrows">
+              <button class="reviews__arrow reviews__arrow--prev">
+                <svg width="21" height="38" viewBox="0 0 21 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.9998 37.1998L0.299805 35.4998L16.7998 18.9998L0.299805 2.4998L1.9998 0.799805L20.1998 18.9998L1.9998 37.1998Z" fill="currentColor" />
+                </svg>
+              </button>
+              <button class="reviews__arrow reviews__arrow--next">
+                <svg width="21" height="38" viewBox="0 0 21 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.9998 37.1998L0.299805 35.4998L16.7998 18.9998L0.299805 2.4998L1.9998 0.799805L20.1998 18.9998L1.9998 37.1998Z" fill="currentColor" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer id="contacts" class="site-footer">
+      <div class="container">
+        <div class="site-footer__body">
+          <div class="site-footer__left">
+            <div class="site-footer__logo">
+              <img width="264" height="108" data-lozad src="images/placeholder.png" data-src="images/logo-with-description.svg" alt="Logo" title="Logo" />
+            </div>
+            <ul class="site-footer__socials socials">
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.2399 1.91992C5.65271 1.91992 1.91992 5.65271 1.91992 10.2399V21.7599C1.91992 26.3471 5.65271 30.0799 10.2399 30.0799H21.7599C26.3471 30.0799 30.0799 26.3471 30.0799 21.7599V10.2399C30.0799 5.65271 26.3471 1.91992 21.7599 1.91992H10.2399ZM10.2399 3.19992H21.7599C25.6553 3.19992 28.7999 6.34457 28.7999 10.2399V21.7599C28.7999 25.6553 25.6553 28.7999 21.7599 28.7999H10.2399C6.34457 28.7999 3.19992 25.6553 3.19992 21.7599V10.2399C3.19992 6.34457 6.34457 3.19992 10.2399 3.19992ZM23.6799 7.03992C23.3404 7.03992 23.0149 7.17478 22.7748 7.41483C22.5348 7.65487 22.3999 7.98045 22.3999 8.31992C22.3999 8.6594 22.5348 8.98497 22.7748 9.22502C23.0149 9.46507 23.3404 9.59992 23.6799 9.59992C24.0194 9.59992 24.345 9.46507 24.585 9.22502C24.8251 8.98497 24.9599 8.6594 24.9599 8.31992C24.9599 7.98045 24.8251 7.65487 24.585 7.41483C24.345 7.17478 24.0194 7.03992 23.6799 7.03992ZM15.9999 8.95992C12.1194 8.95992 8.95992 12.1194 8.95992 15.9999C8.95992 19.8804 12.1194 23.0399 15.9999 23.0399C19.8804 23.0399 23.0399 19.8804 23.0399 15.9999C23.0399 12.1194 19.8804 8.95992 15.9999 8.95992ZM15.9999 10.2399C19.1887 10.2399 21.7599 12.8112 21.7599 15.9999C21.7599 19.1887 19.1887 21.7599 15.9999 21.7599C12.8112 21.7599 10.2399 19.1887 10.2399 15.9999C10.2399 12.8112 12.8112 10.2399 15.9999 10.2399Z" fill="currentColor" />
                   </svg>
                 </a>
               </li>
-              <li class="project-page__socials-item">
-                <a href="https://t.me/batomunkuevv" target="_blank" class="project-page__socials-link">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.63262 14.8632L9.2687 19.8888C9.78938 19.8888 10.0149 19.6692 10.2853 19.4055L12.7264 17.115L17.7847 20.7519C18.7124 21.2595 19.366 20.9922 19.6163 19.914L22.9365 4.63926L22.9374 4.63836C23.2317 3.29196 22.4415 2.76547 21.5377 3.09576L2.02135 10.4316C0.689406 10.9392 0.709573 11.6682 1.79493 11.9985L6.78447 13.5222L18.3742 6.40235C18.9196 6.04775 19.4155 6.24395 19.0076 6.59855L9.63262 14.8632Z" fill="currentColor" />
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.75957 2.56006C3.99988 2.56006 2.55957 4.00037 2.55957 5.76006V26.2401C2.55957 27.9997 3.99988 29.4401 5.75957 29.4401H16.5321C16.6012 29.4515 16.6717 29.4515 16.7408 29.4401H20.3721C20.4412 29.4515 20.5117 29.4515 20.5808 29.4401H26.2396C27.9993 29.4401 29.4396 27.9997 29.4396 26.2401V5.76006C29.4396 4.00037 27.9993 2.56006 26.2396 2.56006H5.75957ZM5.75957 3.84006H26.2396C27.3074 3.84006 28.1596 4.69223 28.1596 5.76006V26.2401C28.1596 27.3079 27.3074 28.1601 26.2396 28.1601H21.1196V19.2001H23.5646L24.4608 14.7201H21.1196V13.4401C21.1196 13.0833 21.1535 13.0554 21.2733 12.9776C21.3931 12.8997 21.7633 12.8001 22.3996 12.8001H24.3196V9.19631L23.9546 9.02256C23.9546 9.02256 22.4845 8.32006 20.4796 8.32006C19.0396 8.32006 17.8566 8.89379 17.0996 9.84006C16.3426 10.7863 15.9996 12.0534 15.9996 13.4401V14.7201H14.0796V19.2001H15.9996V28.1601H5.75957C4.69174 28.1601 3.83957 27.3079 3.83957 26.2401V5.76006C3.83957 4.69223 4.69174 3.84006 5.75957 3.84006ZM20.4796 9.60006C21.8102 9.60006 22.6475 9.89347 23.0396 10.0488V11.5201H22.3996C21.663 11.5201 21.0728 11.581 20.5758 11.9038C20.0788 12.2266 19.8396 12.8394 19.8396 13.4401V16.0001H22.8983L22.5146 17.9201H19.8396V28.1601H17.2796V17.9201H15.3596V16.0001H17.2796V13.4401C17.2796 12.2667 17.5766 11.2938 18.0996 10.6401C18.6226 9.98633 19.3596 9.60006 20.4796 9.60006Z" fill="currentColor" />
                   </svg>
                 </a>
               </li>
-              <li class="project-page__socials-item">
-                <a href="https://wa.me/79960251002?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!" target="_blank" class="project-page__socials-link">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.8547 4.55156C17.8906 2.58281 15.275 1.5 12.4953 1.5C6.75781 1.5 2.08906 6.16875 2.08906 11.9062C2.08906 13.7391 2.56719 15.5297 3.47656 17.1094L2 22.5L7.51719 21.0516C9.03594 21.8813 10.7469 22.3172 12.4906 22.3172H12.4953C18.2281 22.3172 23 17.6484 23 11.9109C23 9.13125 21.8188 6.52031 19.8547 4.55156ZM12.4953 20.5641C10.9391 20.5641 9.41562 20.1469 8.08906 19.3594L7.775 19.1719L4.50313 20.0297L5.375 16.8375L5.16875 16.5094C4.30156 15.1313 3.84688 13.5422 3.84688 11.9062C3.84688 7.13906 7.72812 3.25781 12.5 3.25781C14.8109 3.25781 16.9812 4.15781 18.6125 5.79375C20.2437 7.42969 21.2469 9.6 21.2422 11.9109C21.2422 16.6828 17.2625 20.5641 12.4953 20.5641ZM17.2391 14.0859C16.9813 13.9547 15.7016 13.3266 15.4625 13.2422C15.2234 13.1531 15.05 13.1109 14.8766 13.3734C14.7031 13.6359 14.2063 14.2172 14.0516 14.3953C13.9016 14.5688 13.7469 14.5922 13.4891 14.4609C11.9609 13.6969 10.9578 13.0969 9.95 11.3672C9.68281 10.9078 10.2172 10.9406 10.7141 9.94687C10.7984 9.77344 10.7562 9.62344 10.6906 9.49219C10.625 9.36094 10.1047 8.08125 9.88906 7.56094C9.67813 7.05469 9.4625 7.125 9.30313 7.11563C9.15313 7.10625 8.97969 7.10625 8.80625 7.10625C8.63281 7.10625 8.35156 7.17188 8.1125 7.42969C7.87344 7.69219 7.20312 8.32031 7.20312 9.6C7.20312 10.8797 8.13594 12.1172 8.2625 12.2906C8.39375 12.4641 10.0953 15.0891 12.7062 16.2188C14.3562 16.9312 15.0031 16.9922 15.8281 16.8703C16.3297 16.7953 17.3656 16.2422 17.5812 15.6328C17.7969 15.0234 17.7969 14.5031 17.7313 14.3953C17.6703 14.2781 17.4969 14.2125 17.2391 14.0859Z" fill="currentColor" />
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.75957 2.56006C3.99988 2.56006 2.55957 4.00037 2.55957 5.76006V26.2401C2.55957 27.9997 3.99988 29.4401 5.75957 29.4401H26.2396C27.9993 29.4401 29.4396 27.9997 29.4396 26.2401V5.76006C29.4396 4.00037 27.9993 2.56006 26.2396 2.56006H5.75957ZM5.75957 3.84006H26.2396C27.3074 3.84006 28.1596 4.69223 28.1596 5.76006V26.2401C28.1596 27.3079 27.3074 28.1601 26.2396 28.1601H5.75957C4.69174 28.1601 3.83957 27.3079 3.83957 26.2401V5.76006C3.83957 4.69223 4.69174 3.84006 5.75957 3.84006ZM8.95957 7.04756C8.25863 7.04756 7.62787 7.25707 7.16082 7.65006C6.69377 8.04305 6.40707 8.63015 6.40707 9.25881C6.40707 10.4538 7.44359 11.3854 8.76207 11.4776L8.76457 11.4788C8.8274 11.5002 8.8932 11.5116 8.95957 11.5126C10.4143 11.5126 11.5121 10.4936 11.5121 9.25881C11.512 9.24755 11.5115 9.23629 11.5108 9.22506C11.4457 8.00891 10.3615 7.04756 8.95957 7.04756ZM8.95957 8.31256C9.8506 8.31256 10.2024 8.71048 10.2408 9.27506C10.233 9.82306 9.89403 10.2476 8.95957 10.2476C8.07291 10.2476 7.67207 9.79348 7.67207 9.25881C7.67207 8.99147 7.76962 8.79001 7.97457 8.61756C8.17952 8.44511 8.50851 8.31256 8.95957 8.31256ZM7.03957 12.1601C6.86984 12.1601 6.70706 12.2275 6.58704 12.3475C6.46702 12.4675 6.39959 12.6303 6.39957 12.8001V24.9601C6.39959 25.1298 6.46702 25.2926 6.58704 25.4126C6.70706 25.5326 6.86984 25.6 7.03957 25.6001H10.8796C11.0493 25.6 11.2121 25.5326 11.3321 25.4126C11.4521 25.2926 11.5196 25.1298 11.5196 24.9601V21.2063V12.8001C11.5196 12.6303 11.4521 12.4675 11.3321 12.3475C11.2121 12.2275 11.0493 12.1601 10.8796 12.1601H7.03957ZM12.7996 12.1601C12.6298 12.1601 12.4671 12.2275 12.347 12.3475C12.227 12.4675 12.1596 12.6303 12.1596 12.8001V24.9601C12.1596 25.1298 12.227 25.2926 12.347 25.4126C12.4671 25.5326 12.6298 25.6 12.7996 25.6001H16.6396C16.8093 25.6 16.9721 25.5326 17.0921 25.4126C17.2121 25.2926 17.2796 25.1298 17.2796 24.9601V18.5601C17.2796 18.0291 17.4245 17.5009 17.6796 17.1551C17.9347 16.8092 18.2565 16.6017 18.8683 16.6126C19.4992 16.6234 19.8332 16.8395 20.0858 17.1788C20.3385 17.5181 20.4796 18.0267 20.4796 18.5601V24.9601C20.4796 25.1298 20.547 25.2926 20.667 25.4126C20.7871 25.5326 20.9498 25.6 21.1196 25.6001H24.9596C25.1293 25.6 25.2921 25.5326 25.4121 25.4126C25.5321 25.2926 25.5996 25.1298 25.5996 24.9601V18.0876C25.5996 16.1922 25.0382 14.6908 24.0758 13.6751C23.1135 12.6593 21.775 12.1601 20.3596 12.1601C19.0143 12.1601 17.9905 12.6112 17.2796 13.0713V12.8001C17.2796 12.6303 17.2121 12.4675 17.0921 12.3475C16.9721 12.2275 16.8093 12.1601 16.6396 12.1601H12.7996ZM7.67957 13.4401H10.2396V21.2063V24.3201H7.67957V13.4401ZM13.4396 13.4401H15.9996V14.4388C15.9996 14.573 16.0418 14.7038 16.1203 14.8127C16.1987 14.9216 16.3094 15.0031 16.4366 15.0456C16.5639 15.0882 16.7013 15.0897 16.8295 15.0499C16.9577 15.0101 17.0701 14.931 17.1508 14.8238C17.1508 14.8238 18.1559 13.4401 20.3596 13.4401C21.4817 13.4401 22.444 13.8129 23.1471 14.5551C23.8502 15.2972 24.3196 16.4405 24.3196 18.0876V24.3201H21.7596V18.5601C21.7596 17.8134 21.5807 17.0414 21.1133 16.4138C20.646 15.7862 19.8599 15.3492 18.8908 15.3326C17.9167 15.3153 17.118 15.7613 16.6496 16.3963C16.1812 17.0313 15.9996 17.811 15.9996 18.5601V24.3201H13.4396V13.4401Z" fill="currentColor" />
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
-        </div>
-        <div class="running-line">
-          <div class="running-line__body swiper">
-            <div class="running-line__wrapper swiper-wrapper">
-              <div class="running-line__slide swiper-slide">Wimmer</div>
-              <div class="running-line__slide swiper-slide">Wimmer</div>
-              <div class="running-line__slide running-line__slide--colored swiper-slide">Wimmer</div>
-              <div class="running-line__slide swiper-slide">Wimmer</div>
-              <div class="running-line__slide swiper-slide">Wimmer</div>
-              <div class="running-line__slide running-line__slide--colored swiper-slide">Wimmer</div>
-              <div class="running-line__slide swiper-slide">Wimmer</div>
-              <div class="running-line__slide swiper-slide">Wimmer</div>
-              <div class="running-line__slide running-line__slide--colored swiper-slide">Wimmer</div>
-              <div class="running-line__slide swiper-slide">Wimmer</div>
-              <div class="running-line__slide swiper-slide">Wimmer</div>
-              <div class="running-line__slide running-line__slide--colored swiper-slide">Wimmer</div>
+          <form action="#" class="site-footer__form">
+            <div class="site-footer__form-title">Kontaktieren Sie uns</div>
+            <div class="site-footer__form-wrapper">
+              <div class="site-footer__form-checkboxes">
+                <label class="site-footer__form-checkbox checkbox">
+                  <input type="checkbox" name="call-me" class="checkbox__input visually-hidden" />
+                  <div class="checkbox__indicator"></div>
+                  <div class="checkbox__text">Ich möchte angerufen werden</div>
+                </label>
+                <label class="site-footer__form-checkbox checkbox">
+                  <input type="checkbox" name="write-whatsapp" class="checkbox__input visually-hidden" />
+                  <div class="checkbox__indicator"></div>
+                  <div class="checkbox__text">Ich möchte über Whatsapp angeschrieben werden</div>
+                </label>
+              </div>
+              <div class="site-footer__form-body">
+                <div class="site-footer__form-item">
+                  <input type="text" placeholder="E-mail/Telefon" class="site-footer__form-input input" />
+                </div>
+                <button class="site-footer__form-button button">Senden</button>
+              </div>
             </div>
+          </form>
+          <div class="site-footer__contacts">
+            <div class="site-footer__contacts-title">Kontakt</div>
+            <ul class="site-footer__contacts-list">
+              <li class="site-footer__contact">
+                <a href="mailto:pochtaname@gmail.com" class="site-footer__contact-link">
+                  <span class="site-footer__contact-icon">
+                    <img width="24" height="24" data-lozad src="images/placeholder.png" data-src="images/icons/mail.svg" alt="Mail" title="Mail" />
+                  </span>
+                  <span class="site-footer__contact-text">pochtaname@gmail.com</span>
+                </a>
+              </li>
+              <li class="site-footer__contact">
+                <a href="tel:+49888778899" class="site-footer__contact-link">
+                  <span class="site-footer__contact-icon">
+                    <img width="24" height="24" data-lozad src="images/placeholder.png" data-src="images/icons/phone.svg" alt="Phone" title="Phone" />
+                  </span>
+                  <span class="site-footer__contact-text">+49 888 77 88 99</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
-    </main>
+        <ul class="site-footer__terms">
+          <li class="site-footer__terms-item">
+            <a href="#" class="site-footer__terms-link">Impressum</a>
+          </li>
+          <li class="site-footer__terms-item">
+            <a href="#" class="site-footer__terms-link">Datenschutz</a>
+          </li>
+          <li class="site-footer__terms-item">
+            <a href="#" class="site-footer__terms-link">Cookie</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <a href="#" class="whatsapp-widjet">
+      <img src="images/icons/whatsapp.svg" alt="Whatsapp" title="Whatsapp" />
+    </a>
+    <div class="overlay">
+      <div data-popup="feedback" class="popup">
+        <button type="button" data-popup-close class="popup__close"></button>
+        <form action="#" class="feedback-form">
+          <p class="feedback-form__subtitle">Feedback von unseren Spezialisten</p>
+          <div class="feedback-form__title">Lassen Sie sich beraten, jetzt gleich!</div>
+          <div class="feedback-form__body">
+            <div class="feedback-form__item">
+              <input type="text" name="name" placeholder="Name" class="feeback-form__input input" />
+            </div>
+            <div class="feedback-form__item">
+              <input type="text" name="surname" placeholder="Nachname" class="feeback-form__input input" />
+            </div>
+            <div class="feedback-form__item">
+              <input type="email" name="email" placeholder="E-mail" class="feeback-form__input input" />
+            </div>
+            <div class="feedback-form__item">
+              <input type="tel" name="phone" placeholder="Telefon" class="feeback-form__input input" />
+            </div>
+          </div>
+          <button class="feedback-form__button button button--black">jetzt anfragen</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="quiz"></div>
   </div>
-  <script src="./project-table/js/libs/swiper-bundle.min.js"></script>
-  <script src="./project-table/js/script.js"></script>
+  <script defer src="./js/swiper.min.js"></script>
+  <script defer src="./js/lozad.min.js"></script>
+  <script defer src="./js/quiz.js"></script>
+  <script defer src="./js/script.js"></script>
 </body>
 
 </html>
