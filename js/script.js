@@ -342,8 +342,8 @@ const initSteps = () => {
         const activeItem = [...stepsItems].find(item => item.classList.contains('is-active'));
         const activeTab = [...stepsTabs].find(tab => tab.classList.contains('is-active'));
 
-        activeItem.classList.remove('is-active');
-        activeTab.classList.remove('is-active');
+        if (activeTab) activeTab.classList.remove('is-active');
+        if (activeItem) activeItem.classList.remove('is-active');
         stepsItems[i].classList.add('is-active');
         stepsTabs[i].classList.add('is-active');
         stepsCurrentItem.textContent = currentTab + 1;
@@ -365,7 +365,7 @@ const initPopups = () => {
     if (!popupBtns && !popups) return;
 
     popupBtns.forEach((btn) => {
-        const popup = overlay.querySelector(`[data-popup=${btn.dataset.popupBtn}]`);
+        const popup = [...popups].find(popup => popup.hasAttribute('data-popup', btn.dataset.popupBtn));
 
         if (popup) {
             btn.addEventListener("click", (e) => {
