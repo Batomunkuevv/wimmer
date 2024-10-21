@@ -47,6 +47,8 @@ const initSliders = () => {
             ...defaultOptions,
             slidesPerView: 1,
             spaceBetween: 24,
+            simulateTouch: false,
+            wrapperClass: 'objects-slider__wrapper',
             autoplay: {
                 delay: 5000
             },
